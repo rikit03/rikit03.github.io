@@ -1,329 +1,174 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Rikit Thapa — IT Support & Network Technician</title>
-  <meta name="description" content="Rikit Thapa — IT Support, Networking, Azure, Automation. Resume, projects and certifications." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Rikit Thapa — IT Support, Networking, Azure, SQL, Python, Cybersecurity. Resume, projects and certifications." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    :root{
-      --bg: linear-gradient(180deg,#f7fbff 0%, #f3f6ff 100%);
-      --panel:#ffffff;
-      --muted:#6b7280;
-      --text:#0b1320;
-      --primary:#3751ff;   /* strong blue */
-      --teal:#06b6d4;      /* teal accent */
-      --accent:#8b5cf6;    /* purple accent */
-      --success:#10b981;
-      --radius:14px;
-      --shadow: 0 14px 40px rgba(10,15,30,0.08);
-      --max-width:1200px;
-      --glass: rgba(255,255,255,0.65);
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+      line-height: 1.6;
     }
 
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
-      background:var(--bg);
-      color:var(--text);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.5;
-      padding:28px 18px;
+    header {
+      padding: 40px 20px;
+      text-align: center;
     }
 
-    .wrap{max-width:var(--max-width);margin:0 auto}
-
-    /* Animations */
-    @keyframes fadeUp { from { opacity:0; transform: translateY(8px);} to {opacity:1; transform:none;} }
-    .appears { animation: fadeUp .6s cubic-bezier(.2,.9,.3,1) both; }
-
-    /* HERO */
-    .hero{
-      display:flex;
-      gap:22px;
-      align-items:center;
-      background: linear-gradient(135deg, rgba(55,81,255,0.08), rgba(6,182,212,0.05));
-      padding:30px; border-radius:18px; box-shadow:var(--shadow);
-      overflow:hidden;
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
     }
-    .avatar{
-      width:110px;height:110px;border-radius:16px;
-      background:linear-gradient(135deg,var(--primary),var(--teal));
-      color:white;font-size:36px;font-weight:800;
-      display:flex;align-items:center;justify-content:center;
-      flex:0 0 110px;
-      box-shadow:0 12px 40px rgba(55,81,255,0.12);
-      transform-origin:center;
-      transition:transform .28s cubic-bezier(.2,.9,.3,1);
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 50px;
+      text-align: center;
     }
-    .hero:hover .avatar{ transform: rotate(-6deg) scale(1.02); }
 
-    .hero-title { margin:0; font-size:28px; color:var(--primary); font-weight:800; }
-    .hero-sub { margin:8px 0 0; color:var(--muted); font-weight:600; }
-
-    .actions{ margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; align-items:center }
-    .btn{
-      display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;font-weight:800;text-decoration:none;
-      border:0; cursor:pointer; box-shadow: 0 8px 20px rgba(10,15,30,0.06);
-      transition: transform .18s, box-shadow .18s;
+    p {
+      max-width: 780px;
+      margin: auto;
+      text-align: center;
+      font-size: 1.1rem;
+      opacity: 0.9;
     }
-    .btn:active{ transform: translateY(1px) }
-    .btn.primary{ background: linear-gradient(90deg,var(--primary),var(--teal)); color:white }
-    .btn.ghost{ background:var(--panel); color:var(--text); border:1px solid rgba(10,15,30,0.04) }
 
-    /* Layout */
-    .grid{ display:grid; grid-template-columns: 2fr 1fr; gap:22px; margin-top:22px }
-    @media (max-width:980px){ .grid{ grid-template-columns:1fr } .hero{ flex-direction:column; align-items:flex-start } .avatar{width:88px;height:88px} }
-
-    .card{
-      background:var(--panel);
-      padding:18px;
-      border-radius:12px;
-      box-shadow:var(--shadow);
-      transition: transform .18s, box-shadow .18s;
-      will-change: transform;
+    .container {
+      width: 92%;
+      max-width: 1000px;
+      margin: auto;
     }
-    .card:hover{ transform: translateY(-6px); box-shadow: 0 26px 60px rgba(10,15,30,0.09); }
-    h2{ margin:0 0 10px; font-size:20px; color:var(--primary); }
 
-    .muted{ color:var(--muted); font-size:15px; }
-
-    /* projects */
-    .projects{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:14px }
-    .project{
-      display:flex; gap:12px; padding:14px; border-radius:12px;
-      border:1px solid rgba(10,15,30,0.03);
-      background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(246,252,255,0.9));
-      align-items:flex-start;
-      transition: transform .18s, box-shadow .18s;
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 12px;
     }
-    .project:hover{ transform: translateY(-6px); box-shadow:0 18px 40px rgba(10,15,30,0.06); }
-    .tag{ font-size:12px; padding:6px 10px; border-radius:999px; background:linear-gradient(90deg,var(--teal),var(--primary)); color:white; font-weight:800; white-space:nowrap; }
 
-    .project .meta { flex:1 }
-    .project .meta a.title{ display:block; font-weight:800; color:var(--text); text-decoration:none; font-size:16px; margin-bottom:6px; }
-    .project .meta p{ margin:0; color:var(--muted); font-size:14px; }
+    .primary {
+      background: #007bff;
+      color: white;
+    }
 
-    /* skills grid */
-    .skills{ display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:10px }
-    @media (max-width:520px){ .skills{ grid-template-columns:1fr } }
-    .skill-card{ background: linear-gradient(180deg,#ffffff,#f7fbff); padding:10px 12px; border-radius:10px; border:1px solid rgba(10,15,30,0.03); font-weight:700; color:var(--text); }
+    .btn-group a {
+      margin-right: 10px;
+    }
 
-    /* certifications */
-    .cert-list{ display:flex; flex-direction:column; gap:12px; margin-top:8px }
-    .cert-card{ display:flex; gap:12px; align-items:center; justify-content:space-between; padding:12px; border-radius:12px; background:#fff; border:1px solid rgba(10,15,30,0.04)}
-    .cert-info{ flex:1; margin-right:12px }
-    .cert-info strong{ display:block; color:var(--primary); font-weight:800; }
-    .cert-info .muted{ margin-top:4px; }
-    .cert-img{ width:140px; height:auto; border-radius:10px; box-shadow:0 8px 26px rgba(6,182,212,0.06) }
-    .cert-img.small{ width:110px }
+    /* Cards */
+    .project-card {
+      background: #1a1a1a;
+      padding: 25px;
+      border-radius: 12px;
+      margin: 25px 0;
+      border: 1px solid #333;
+    }
 
-    /* resume preview */
-    .resume-thumb{ width:150px; border-radius:12px; overflow:hidden; box-shadow:0 12px 34px rgba(10,15,30,0.06); }
-
-    /* contact */
-    .contact a{ color:var(--primary); text-decoration:none; font-weight:800; }
-
-    /* footer */
-    footer{ margin-top:28px; text-align:center; color:var(--muted); font-size:14px; }
-
-    /* subtle entrance delays */
-    .delay-1{ animation-delay:.06s } .delay-2{ animation-delay:.12s } .delay-3{ animation-delay:.18s } .delay-4{ animation-delay:.24s }
-
+    footer {
+      margin-top: 60px;
+      padding: 30px 0;
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
   </style>
 </head>
+
 <body>
-  <div class="wrap">
+  <!-- HEADER -->
+  <header>
+    <h1>Rikit Thapa</h1>
+    <p>IT Support Technician • Network Engineer • Cybersecurity • Azure • SQL • Python Automation</p>
 
-    <!-- HERO -->
-    <header class="hero appears delay-1" role="banner" aria-label="Hero section">
-      <div class="avatar" aria-hidden="true">RT</div>
+    <a class="btn primary" href="Resume.pdf" target="_blank">Download Resume</a>
+  </header>
 
-      <div style="flex:1; min-width:0">
-        <h1 class="hero-title">Rikit Thapa</h1>
-        <div class="hero-sub muted">IT Support • Help Desk • Network Technician • Azure • Automation</div>
+  <!-- ABOUT -->
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>
+      I am an IT Support & Network Technician with hands-on experience in Windows Server, Active Directory, Azure, SQL, Cisco networking, Python automation, and cybersecurity best practices.
+      I focus on building secure, scalable IT infrastructures and solving complex technical problems.
+    </p>
+  </section>
 
-        <div class="actions" role="group" aria-label="quick links" style="margin-top:12px">
-          <a class="btn primary" href="/mnt/data/resume.pdf" target="_blank" rel="noopener">📄 Resume</a>
-          <a class="btn ghost" href="https://github.com/rikit03" target="_blank" rel="noopener">💻 GitHub</a>
-          <a class="btn ghost" href="https://www.linkedin.com/in/rikit-thapa-294ab028a/" target="_blank" rel="noopener">🔗 LinkedIn</a>
-        </div>
+  <!-- SKILLS -->
+  <section id="skills" class="container">
+    <h2>Technical Skills</h2>
+    <p>
+      <strong>Networking:</strong> VLANs, OSPF, ACLs, DHCP, DNS, Subnetting, Cisco Routers/Switches<br>
+      <strong>Microsoft:</strong> Azure AD, M365, Windows Server, Group Policy<br>
+      <strong>Cybersecurity:</strong> MFA, Hardening, SIEM, Firewalls, SQL Security<br>
+      <strong>Database:</strong> SQL Server Backup & Security, T-SQL<br>
+      <strong>Programming:</strong> Python automation scripts<br>
+      <strong>Tools:</strong> Wireshark, PowerShell, Packet Tracer, VMware, Hyper-V
+    </p>
+  </section>
 
-        <div style="margin-top:10px;color:var(--muted);font-weight:600">📍 Belleville, ON &nbsp; • &nbsp; Loyalist College (Diploma — 2025)</div>
+  <!-- PROJECTS -->
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+
+    <!-- Azure Project -->
+    <div class="project-card">
+      <h3>Azure Server Deployment & Active Directory Project</h3>
+      <p>
+        Configured Azure VM, installed Windows Server, deployed Active Directory, DNS, DHCP, GPOs, security policies, and automated tasks using PowerShell.
+      </p>
+      <a class="btn primary" href="Rikit_Azure_Project.pdf" target="_blank">View Azure Project</a>
+    </div>
+
+    <!-- Python Project -->
+    <div class="project-card">
+      <h3>Python Automation Scripts</h3>
+      <p>
+        Developed multiple Python tools including password generators, folder automation, file organization scripts, network scanners, and system monitoring utilities.
+      </p>
+      <a class="btn primary" href="Rikit_Python_Project.pdf" target="_blank">View Python Project</a>
+    </div>
+
+    <!-- Networking Project -->
+    <div class="project-card">
+      <h3>Cisco Networking & Packet Tracer Project</h3>
+      <p>
+        Designed enterprise network topology with routers, switches, VLANs, trunking, OSPF routing, ACLs, port security, and DHCP relay inside Cisco Packet Tracer.
+      </p>
+      <a class="btn primary" href="Rikit_Network_Project.pdf" target="_blank">View Network Project</a>
+    </div>
+
+    <!-- SQL Security & Backup -->
+    <div class="project-card">
+      <h3>SQL Server Security & Backup Strategy</h3>
+      <p>
+        Implemented database encryption, TDE, RBAC, MFA, audit logs, automated backups, offsite replication, disaster recovery, and full SQL security hardening.
+      </p>
+
+      <div class="btn-group">
+        <a class="btn primary" href="rikit_SQL_Security_policy.docx" target="_blank">SQL Security Policy</a>
+        <a class="btn primary" href="rikit_SQL Backup policy.docx" target="_blank">SQL Backup Policy</a>
+        <a class="btn primary" href="Rikit_SQL_Strategy.pdf" target="_blank">Full SQL Strategy</a>
       </div>
+    </div>
 
-      <div class="resume-thumb" style="flex-shrink:0; margin-left:12px">
-        <a href="/mnt/data/resume.pdf" target="_blank" rel="noopener" title="Open resume">
-          <img src="/mnt/data/6abee096-bf73-4b00-a058-663a5f6bccbc.png" alt="Resume preview" style="width:100%; height:auto; display:block;">
-        </a>
-      </div>
-    </header>
+  </section>
 
-    <!-- MAIN GRID -->
-    <main class="grid" role="main">
+  <footer>
+    © 2025 Rikit Thapa — Portfolio Website
+  </footer>
 
-      <!-- LEFT -->
-      <section>
-        <article class="card appears delay-2" aria-labelledby="about">
-          <h2 id="about">About</h2>
-          <p class="muted">
-            Motivated Computer Systems Technician with practical experience in IT support, networking, and Azure cloud security.
-            I handle hardware/software troubleshooting, Active Directory and Office 365 administration, design secure network/cloud solutions,
-            and automate routine tasks with PowerShell and Python.
-          </p>
-        </article>
-
-        <article class="card appears delay-3" style="margin-top:16px" aria-labelledby="projects">
-          <h2 id="projects">Highlighted Projects</h2>
-
-          <ul class="projects" aria-live="polite">
-            <li class="project">
-              <div class="tag">Cloud</div>
-              <div class="meta">
-                <a class="title" href="projects/azure-security-lab/" target="_blank">Azure Security Lab (AZ-500)</a>
-                <p class="muted">Hardened environment with RBAC, NSGs, Azure Firewall, Log Analytics and policy automation. ARM/Bicep samples included.</p>
-                <div style="margin-top:10px">
-                  <a class="btn ghost" href="projects/azure-security-lab/azure-architecture.png" target="_blank">View diagram</a>
-                  <a class="btn ghost" href="projects/azure-security-lab/az-policy.json" target="_blank">Policy JSON</a>
-                </div>
-              </div>
-            </li>
-
-            <li class="project">
-              <div class="tag" style="background:linear-gradient(90deg,#ff8a65,#ff6b81)">DB</div>
-              <div class="meta">
-                <a class="title" href="https://rikit03.github.io/rikit_SQL Backup policy.docx" target="_blank">SQL Security & Backup Strategy</a>
-                <p class="muted">Role-based access, automated backup schedules, retention and recovery playbooks for SQL Server.</p>
-                <div style="margin-top:10px">
-                  <a class="btn ghost" href="projects/sql/rikit_SQL%20Backup%20policy.docx" target="_blank">Download backup policy</a>
-                </div>
-              </div>
-            </li>
-
-            <li class="project">
-              <div class="tag">Code</div>
-              <div class="meta">
-                <a class="title" href="projects/python-sql/app.py" target="_blank">Python + SQL Automation Tool</a>
-                <p class="muted">Scripted automation for scheduled queries, exports and stored-procedure calls using pyodbc.</p>
-                <div style="margin-top:10px">
-                  <a class="btn ghost" href="projects/python-sql/app.py" target="_blank">View app.py</a>
-                  <a class="btn ghost" href="projects/python-sql/pythonProject.sql" target="_blank">SQL scripts</a>
-                </div>
-              </div>
-            </li>
-
-            <li class="project">
-              <div class="tag" style="background:linear-gradient(90deg,#9f7aea,#60a5fa)">Network</div>
-              <div class="meta">
-                <a class="title" href="projects/network/network-topology.pkt" target="_blank">Network Design Simulation</a>
-                <p class="muted">Multi-site Packet Tracer/GNS3 design: VLANs, OSPF, DHCP, ACLs, NAT and full config documentation.</p>
-                <div style="margin-top:10px">
-                  <a class="btn ghost" href="projects/network/network-topology.pkt" target="_blank">Download .pkt</a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </article>
-
-        <article class="card appears delay-4" style="margin-top:16px" aria-labelledby="experience">
-          <h2 id="experience">Experience</h2>
-          <ul class="muted" style="padding-left:18px;margin:0">
-            <li><strong>Technical Sales Advisor — Best Buy</strong> (Oct 2023 – Jun 2025) — customer-facing troubleshooting, device setup, Geek Squad assistance.</li>
-            <li><strong>Customer Support Representative — Techlink Solutions</strong> (Oct 2022 – Jul 2023) — triage via phone/email/chat.</li>
-            <li><strong>Lab Assistant — Southwestern State College</strong> (May 2022 – Oct 2022) — VM/lab provisioning and student support.</li>
-          </ul>
-        </article>
-      </section>
-
-      <!-- RIGHT SIDEBAR -->
-      <aside>
-
-        <div class="card appears delay-2" aria-labelledby="skills">
-          <h2 id="skills">Technical Skills</h2>
-          <div class="skills" style="margin-top:10px">
-            <div class="skill-card">Routing & Switching</div>
-            <div class="skill-card">VLANs & Inter-VLAN</div>
-            <div class="skill-card">OSPF / EIGRP</div>
-            <div class="skill-card">Azure AD & RBAC</div>
-            <div class="skill-card">Azure Firewall / NSG</div>
-            <div class="skill-card">Windows Server / AD</div>
-            <div class="skill-card">Linux (Ubuntu)</div>
-            <div class="skill-card">PowerShell</div>
-            <div class="skill-card">Python</div>
-            <div class="skill-card">SQL Server</div>
-            <div class="skill-card">Ticketing (Jira / ServiceNow)</div>
-            <div class="skill-card">Remote Support (RDP / AnyDesk)</div>
-          </div>
-        </div>
-
-        <div class="card appears delay-3" style="margin-top:16px" aria-labelledby="lang">
-          <h2 id="lang">Languages</h2>
-          <p class="muted" style="margin:0 0 6px">English — <strong>Fluent</strong></p>
-          <p class="muted" style="margin:0 0 6px">Hindi — Intermediate</p>
-          <p class="muted" style="margin:0">Nepali — Native</p>
-        </div>
-
-        <div class="card appears delay-4" style="margin-top:16px" aria-labelledby="certs">
-          <h2 id="certs">Certifications</h2>
-
-          <div class="cert-list">
-            <!-- AZ-900 (uploaded image path used) -->
-            <div class="cert-card">
-              <div class="cert-info">
-                <strong>Microsoft Certified: Azure Fundamentals (AZ-900)</strong>
-                <div class="muted">2024 — Cloud fundamentals</div>
-              </div>
-              <img class="cert-img" src="/mnt/data/A_certificate_displays_Microsoft_certification_for.png" alt="AZ-900 certificate" onerror="this.style.display='none'">
-            </div>
-
-            <!-- CCNA (placeholder or file) -->
-            <div class="cert-card">
-              <div class="cert-info">
-                <strong>Cisco Certified Network Associate (CCNA)</strong>
-                <div class="muted">In Progress — Routing & Switching</div>
-              </div>
-              <!-- if user uploads a ccna.png under certifications/, it will show; otherwise shows a subtle placeholder using onerror fallback -->
-              <img class="cert-img small" src="certifications/ccna.png" alt="CCNA certificate" onerror="this.style.display='none'">
-            </div>
-          </div>
-        </div>
-
-        <div class="card appears delay-3" style="margin-top:16px" aria-labelledby="contact">
-          <h2 id="contact">Contact</h2>
-          <p class="muted" style="margin:0 0 8px">Email</p>
-          <a class="contact" href="mailto:rikitthapa03@gmail.com">rikitthapa03@gmail.com</a>
-
-          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
-            <a class="btn ghost" href="https://github.com/rikit03" target="_blank">GitHub</a>
-            <a class="btn ghost" href="https://www.linkedin.com/in/rikit-thapa-294ab028a/" target="_blank">LinkedIn</a>
-          </div>
-        </div>
-
-      </aside>
-    </main>
-
-    <footer>© 2025 Rikit Thapa — IT Support & Network Technician</footer>
-  </div>
-
-  <!-- small script to add appear class delays for smoother entrance (no external libs) -->
-  <script>
-    // add tiny staggered reveal on load for elements with "appears" class
-    document.addEventListener('DOMContentLoaded', function () {
-      const els = document.querySelectorAll('.appears');
-      els.forEach((el, i) => {
-        el.style.animationDelay = (i * 80) + 'ms';
-      });
-    });
-  </script>
 </body>
+
 </html>
-
-
-
-
-
