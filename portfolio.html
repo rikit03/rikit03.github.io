@@ -9,25 +9,23 @@
 
   <style>
     :root{
-      --bg:#f3f6ff;
+      --bg:#eef3ff;
       --panel:#ffffff;
       --muted:#6b7280;
       --text:#0b1320;
       --primary:#3751ff;
       --accent:#06b6d4;
-      --success:#10b981;
       --radius:14px;
-      --shadow: 0 10px 30px rgba(10,15,30,0.06);
+      --shadow: 0 10px 30px rgba(10,15,30,0.08);
       --max-width:1150px;
     }
 
-    *{box-sizing:border-box}
     body{
       margin:0;
       font-family:Inter,system-ui;
-      background: linear-gradient(180deg,#f7fbff 0%, #f3f6ff 100%);
+      background:linear-gradient(180deg,#f7fbff 0%, #eef3ff 100%);
       color:var(--text);
-      padding:28px 18px;
+      padding:28px 16px;
     }
     .wrap{max-width:var(--max-width);margin:auto}
 
@@ -36,17 +34,16 @@
       display:flex;
       gap:22px;
       align-items:center;
-      background:linear-gradient(135deg, rgba(55,81,255,0.06), rgba(6,182,212,0.04));
-      padding:26px;
+      background:linear-gradient(135deg, rgba(55,81,255,0.10), rgba(6,182,212,0.10));
+      padding:28px;
       border-radius:18px;
       box-shadow:var(--shadow);
     }
     .avatar{
-      width:108px;height:108px;border-radius:14px;
+      width:108px;height:108px;border-radius:16px;
       background:linear-gradient(135deg,var(--primary),var(--accent));
       display:flex;align-items:center;justify-content:center;
       color:white;font-size:34px;font-weight:800;
-      box-shadow:0 8px 26px rgba(55,81,255,0.12);
     }
     .btn{
       padding:10px 14px;
@@ -56,61 +53,75 @@
       text-decoration:none;
       font-weight:700;
       cursor:pointer;
+      font-size:14px;
     }
     .btn.primary{background:linear-gradient(90deg,var(--primary),var(--accent));color:white}
-    .btn.ghost{background:white;border:1px solid rgba(10,15,30,0.06);color:var(--text)}
+    .btn.ghost{background:white;border:1px solid rgba(10,15,30,0.08);color:var(--text)}
 
-    /* Layout */
+    h1{margin:0;font-size:34px}
+    h2{font-size:20px;margin:0 0 12px;color:var(--primary)}
+
     .grid{display:grid;grid-template-columns:2fr 1fr;gap:22px;margin-top:22px}
-    @media (max-width:900px){ .grid{grid-template-columns:1fr} }
+    @media(max-width:900px){ .grid{grid-template-columns:1fr} }
 
     .card{
-      background:white;padding:18px;border-radius:12px;box-shadow:var(--shadow);
+      background:white;
+      padding:20px;
+      border-radius:16px;
+      box-shadow:var(--shadow);
       transition:transform .15s;
     }
-    .card:hover{transform:translateY(-6px)}
-    h2{margin-top:0;font-size:18px;color:var(--primary)}
+    .card:hover{transform:translateY(-4px)}
 
-    /* Projects */
-    .projects{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+    .projects{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
     .project{
       display:flex;
       gap:12px;
-      padding:12px;
-      border-radius:12px;
-      border:1px solid rgba(10,15,30,0.04);
-      background:#fafbff;
+      padding:14px;
+      border-radius:14px;
+      background:#f8f9ff;
+      border:1px solid rgba(10,15,30,0.05);
     }
     .tag{
       font-size:12px;
-      padding:6px 10px;
+      padding:4px 10px;
       border-radius:999px;
       background:linear-gradient(90deg,var(--accent),var(--primary));
       color:white;
       font-weight:700;
-      white-space:nowrap;
+      height:fit-content;
     }
 
-    /* Skills Pills */
     .skills{display:flex;flex-wrap:wrap;gap:8px}
-    .pill{padding:8px 12px;border-radius:999px;background:#eef6ff;font-weight:700;font-size:13px}
+    .pill{
+      padding:8px 12px;
+      border-radius:999px;
+      background:#e8efff;
+      font-weight:700;
+      font-size:13px;
+    }
 
-    /* Certifications */
     .cert-item{
-      background:#f9fbff;
-      padding:12px;
-      border-radius:12px;
-      border:1px solid rgba(10,15,30,0.05);
+      background:#f5f7ff;
+      padding:14px;
+      border-radius:14px;
+      border:1px solid rgba(10,15,30,0.07);
       margin-bottom:18px;
     }
     .cert-item img{
       width:100%;
       max-width:420px;
       border-radius:14px;
-      margin-top:10px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.15);
+      margin-top:12px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.12);
     }
 
+    a.cert-link{
+      color:var(--accent);
+      font-weight:700;
+      text-decoration:none;
+    }
+    a.cert-link:hover{color:var(--primary)}
   </style>
 </head>
 
@@ -123,10 +134,10 @@
 
     <div style="flex:1">
       <h1>Rikit Thapa</h1>
-      <p class="muted">IT Support • Help Desk • Network Technician • Azure • Automation</p>
+      <p class="muted">IT Support • Help Desk • Network Technician • Azure • Windows • Troubleshooting</p>
 
-      <div class="actions" style="margin-top:12px">
-        <a class="btn primary" href="/mnt/data/resume.pdf" target="_blank">📄 View Resume</a>
+      <div style="margin-top:12px">
+        <a class="btn primary" href="Resume.pdf" target="_blank">📄 View Resume</a>
         <a class="btn ghost" href="https://github.com/rikit03" target="_blank">GitHub</a>
         <a class="btn ghost" href="https://linkedin.com/in/rikit-thapa-294ab028a" target="_blank">LinkedIn</a>
       </div>
@@ -134,12 +145,8 @@
       <p class="muted" style="margin-top:10px">📍 Belleville, ON • 🎓 Loyalist College (2025)</p>
     </div>
 
-    <div style="width:156px">
-      <a href="/mnt/data/resume.pdf" target="_blank">
-        <img class="resume-preview"
-             src="/mnt/data/6abee096-bf73-4b00-a058-663a5f6bccbc.png"
-             style="width:100%;border-radius:10px">
-      </a>
+    <div style="width:150px">
+      <img src="/mnt/data/6abee096-bf73-4b00-a058-663a5f6bccbc.png" style="width:100%;border-radius:12px">
     </div>
   </header>
 
@@ -152,8 +159,9 @@
       <div class="card">
         <h2>About</h2>
         <p class="muted">
-          Motivated Computer Systems Technician with experience in IT support,
-          networking, Azure, Active Directory, and automation using PowerShell & Python.
+          IT Support & Networking specialist with hands-on experience in troubleshooting,
+          system administration, Azure, Active Directory, networking, SQL, and automation
+          using PowerShell & Python.
         </p>
       </div>
 
@@ -161,13 +169,12 @@
         <h2>Highlighted Projects</h2>
 
         <ul class="projects">
-
           <li class="project">
             <div class="tag">Cloud</div>
             <div>
-              <strong>Azure Security Lab (AZ-500)</strong>
-              <p class="muted">RBAC, NSGs, Azure Firewall, Logs, Policies</p>
-              <a class="btn ghost" href="projects/azure-security-lab/azure-architecture.png">Diagram</a>
+              <strong>Azure Security Lab</strong>
+              <p class="muted">RBAC, NSGs, Azure Firewall, Defender, Policies</p>
+              <a class="btn ghost" href="projects/azure/security-architecture.png">Diagram</a>
             </div>
           </li>
 
@@ -175,17 +182,17 @@
             <div class="tag">DB</div>
             <div>
               <strong>SQL Security & Backup Strategy</strong>
-              <p class="muted">Backup policy + security policy</p>
-              <a class="btn ghost" href="projects/sql/rikit_SQL Backup policy.docx">Backup</a>
+              <p class="muted">Backup policies + access control</p>
+              <a class="btn ghost" href="projects/sql/rikit_SQL Backup policy.docx">Document</a>
             </div>
           </li>
 
           <li class="project">
-            <div class="tag">Code</div>
+            <div class="tag">Automation</div>
             <div>
               <strong>Python + SQL Automation Tool</strong>
-              <p class="muted">Automated reports & scripts</p>
-              <a class="btn ghost" href="projects/python-sql/app.py">app.py</a>
+              <p class="muted">Automated reporting scripts</p>
+              <a class="btn ghost" href="projects/python-sql/app.py">Source</a>
             </div>
           </li>
 
@@ -193,11 +200,10 @@
             <div class="tag">Network</div>
             <div>
               <strong>Network Design Simulation</strong>
-              <p class="muted">Packet Tracer topology + docs</p>
-              <a class="btn ghost" href="projects/network/network-topology.pkt">Topology</a>
+              <p class="muted">Packet Tracer topology + documentation</p>
+              <a class="btn ghost" href="projects/network/network-topology.pkt">Download</a>
             </div>
           </li>
-
         </ul>
       </div>
 
@@ -224,9 +230,11 @@
           <span class="pill">Azure AD</span>
           <span class="pill">Windows Server</span>
           <span class="pill">Linux</span>
+          <span class="pill">Active Directory</span>
           <span class="pill">PowerShell</span>
           <span class="pill">Python</span>
           <span class="pill">SQL Server</span>
+          <span class="pill">Troubleshooting</span>
         </div>
       </div>
 
@@ -241,14 +249,18 @@
         <h2>Certifications</h2>
 
         <div class="cert-item">
-          <strong>Microsoft Azure Fundamentals (AZ-900)</strong>
-          <p class="muted">Cloud fundamentals and Azure platform knowledge.</p>
-          <img src="certifications/az900.png" alt="AZ900 Certification">
+          <a class="cert-link" href="/mnt/data/A_certificate_displays_Microsoft_certification_for.png" target="_blank">
+            Microsoft Azure Fundamentals (AZ-900)
+          </a>
+          <p class="muted">Cloud fundamentals, Azure concepts, identity, security, workloads.</p>
+          <img src="/mnt/data/A_certificate_displays_Microsoft_certification_for.png" alt="AZ-900 Certification">
         </div>
 
         <div class="cert-item">
-          <strong>Cisco CCNA</strong>
-          <p class="muted">Networking, routing, switching & security.</p>
+          <a class="cert-link" href="certifications/ccna.png" target="_blank">
+            Cisco CCNA
+          </a>
+          <p class="muted">Routing, switching, IP services, security, automation.</p>
           <img src="certifications/ccna.png" alt="CCNA Certification">
         </div>
 
