@@ -317,7 +317,7 @@
         <div class="card" style="margin-top: 16px;">
           <h2>Contact</h2>
           <div class="contact-line">
-            <a class="btn secondary" href="mailto:youremail@example.com">Email Me</a>
+            <a class="btn secondary" href="rikitthapa2003@outlook.com">Email Me</a>
             <a class="btn secondary" href="https://www.linkedin.com/in/rikit-thapa-294ab028a/" target="_blank">LinkedIn</a>
           </div>
           <p class="muted" style="margin-top: 12px;">
