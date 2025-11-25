@@ -47,15 +47,14 @@ I enjoy working on real-world infrastructure challenges and helping organization
 
 ---
 
-## 📬 Contact
-- 📧 **Email:** [rikitthapa2003@outlook.com](mailto:rikitthapa2003@outlook.com)  
-- 🔗 **LinkedIn:** https://www.linkedin.com/in/rikit-thapa-294ab028a  
-- 🧑‍💻 **GitHub:** https://github.com/rikit03  
-
----
-
 ## 🛠️ Tech Used
 - **HTML5** — structure  
 - **CSS3** — styling  
 - **GitHub Pages** — hosting  
 
+---
+
+## 📬 Contact
+- 📧 **Email:** [rikitthapa2003@outlook.com](mailto:rikitthapa2003@outlook.com)  
+- 🔗 **LinkedIn:** https://www.linkedin.com/in/rikit-thapa-294ab028a  
+- 🧑‍💻 **GitHub:** https://github.com/rikit03
