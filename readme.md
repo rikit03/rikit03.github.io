@@ -49,8 +49,6 @@ I enjoy working on real-world infrastructure challenges and helping organization
 
 ## 📬 Contact
 - 📧 **Email:** [rikitthapa2003@outlook.com](mailto:rikitthapa2003@outlook.com)  
-- 📱 **Phone:** 613-970-4076  
-- 📍 **Location:** Belleville, Ontario  
 - 🔗 **LinkedIn:** https://www.linkedin.com/in/rikit-thapa-294ab028a  
 - 🧑‍💻 **GitHub:** https://github.com/rikit03  
 
@@ -61,6 +59,3 @@ I enjoy working on real-world infrastructure challenges and helping organization
 - **CSS3** — styling  
 - **GitHub Pages** — hosting  
 
----
-
-## 📂 Repository Structure
