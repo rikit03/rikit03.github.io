@@ -30,6 +30,8 @@
       font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
       background:var(--bg);
       color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
       line-height:1.5;
       padding:28px 18px;
     }
@@ -54,6 +56,7 @@
       display:flex;align-items:center;justify-content:center;
       flex:0 0 110px;
       box-shadow:0 12px 40px rgba(55,81,255,0.12);
+      transform-origin:center;
       transition:transform .28s cubic-bezier(.2,.9,.3,1);
     }
     .hero:hover .avatar{ transform: rotate(-6deg) scale(1.02); }
@@ -71,6 +74,7 @@
     .btn.ghost{ background:var(--panel); color:var(--text); border:1px solid rgba(10,15,30,0.04) }
 
     .grid{ display:grid; grid-template-columns: 2fr 1fr; gap:22px; margin-top:22px }
+    @media (max-width:980px){ .grid{ grid-template-columns:1fr } .hero{ flex-direction:column; align-items:flex-start } .avatar{width:88px;height:88px} }
 
     .card{
       background:var(--panel);
@@ -78,25 +82,36 @@
       border-radius:12px;
       box-shadow:var(--shadow);
       transition: transform .18s, box-shadow .18s;
+      will-change: transform;
     }
-
+    .card:hover{ transform: translateY(-6px); box-shadow: 0 26px 60px rgba(10,15,30,0.09); }
     h2{ margin:0 0 10px; font-size:20px; color:var(--primary); }
+
     .muted{ color:var(--muted); font-size:15px; }
 
     .projects{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:14px }
-    .project{ display:flex; gap:12px; padding:14px; border-radius:12px; border:1px solid rgba(10,15,30,0.03); background:linear-gradient(180deg,#ffffffee,#f6fcffee); }
+    .project{
+      display:flex; gap:12px; padding:14px; border-radius:12px;
+      border:1px solid rgba(10,15,30,0.03);
+      background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(246,252,255,0.9));
+      align-items:flex-start;
+      transition: transform .18s, box-shadow .18s;
+    }
+    .project:hover{ transform: translateY(-6px); box-shadow:0 18px 40px rgba(10,15,30,0.06); }
+    .tag{ font-size:12px; padding:6px 10px; border-radius:999px; background:linear-gradient(90deg,var(--teal),var(--primary)); color:white; font-weight:800; white-space:nowrap; }
 
-    .tag{ font-size:12px; padding:6px 10px; border-radius:999px; background:linear-gradient(90deg,var(--teal),var(--primary)); color:white; font-weight:800; }
+    .project .meta { flex:1 }
+    .project .meta a.title{ display:block; font-weight:800; color:var(--text); text-decoration:none; font-size:16px; margin-bottom:6px; }
+    .project .meta p{ margin:0; color:var(--muted); font-size:14px; }
 
-    .project .meta a.title{ font-weight:800; color:var(--text); text-decoration:none; font-size:16px; }
+    .skills{ display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:10px }
+    @media (max-width:520px){ .skills{ grid-template-columns:1fr } }
+    .skill-card{ background: linear-gradient(180deg,#ffffff,#f7fbff); padding:10px 12px; border-radius:10px; border:1px solid rgba(10,15,30,0.03); font-weight:700; color:var(--text); }
 
-    .skills{ display:grid; grid-template-columns:repeat(2,1fr); gap:10px }
-    .skill-card{ background:#fff; padding:10px; border-radius:10px; font-weight:700; }
-
-    .cert-card{ display:flex; gap:12px; padding:12px; background:#fff; border-radius:12px; border:1px solid rgba(10,15,30,0.04); }
-    .cert-img{ width:140px; border-radius:10px }
-
-    .resume-thumb{ width:150px; border-radius:12px; overflow:hidden; box-shadow:0 12px 34px rgba(10,15,30,0.06); }
+    .cert-list{ display:flex; flex-direction:column; gap:12px; margin-top:8px }
+    .cert-card{ display:flex; gap:12px; align-items:center; justify-content:space-between; padding:12px; border-radius:12px; background:#fff; border:1px solid rgba(10,15,30,0.04)}
+    .cert-info{ flex:1; margin-right:12px }
+    .cert-info strong{ display:block; color:var(--primary); font-weight:800; }
 
     footer{ margin-top:28px; text-align:center; color:var(--muted); font-size:14px; }
   </style>
@@ -105,15 +120,15 @@
 <body>
   <div class="wrap">
 
+    <!-- HERO -->
     <header class="hero appears delay-1">
       <div class="avatar">RT</div>
 
-      <div style="flex:1">
+      <div style="flex:1; min-width:0">
         <h1 class="hero-title">Rikit Thapa</h1>
         <div class="hero-sub muted">IT Support • Help Desk • Network Technician • Azure • Automation</div>
 
         <div class="actions">
-          <!-- FIXED -->
           <a class="btn primary" href="Resume.pdf" target="_blank">📄 Resume</a>
           <a class="btn ghost" href="https://github.com/rikit03" target="_blank">💻 GitHub</a>
           <a class="btn ghost" href="https://www.linkedin.com/in/rikit-thapa-294ab028a/" target="_blank">🔗 LinkedIn</a>
@@ -123,53 +138,59 @@
           📍 Belleville, ON • Loyalist College (Diploma — 2025)
         </div>
       </div>
-
-      <div class="resume-thumb">
-        <!-- FIXED -->
-        <a href="Resume.pdf" target="_blank">
-          <img src="resume.png" alt="Resume preview">
-        </a>
-      </div>
     </header>
 
     <main class="grid">
 
+      <!-- LEFT -->
       <section>
+
         <article class="card appears delay-2">
           <h2>About</h2>
           <p class="muted">
             Motivated Computer Systems Technician with practical experience in IT support, networking, and Azure cloud security.
+            I handle hardware/software troubleshooting, Active Directory and Office 365 administration, design secure network/cloud solutions,
+            and automate routine tasks with PowerShell and Python.
           </p>
         </article>
 
         <article class="card appears delay-3" style="margin-top:16px">
           <h2>Highlighted Projects</h2>
+
           <ul class="projects">
 
             <li class="project">
               <div class="tag">Cloud</div>
               <div class="meta">
-                <a class="title" href="#">Azure Security Lab (AZ-500)</a>
-                <p class="muted">Hardened environment with RBAC & NSGs.</p>
+                <a class="title" href="azure-security-lab.html" target="_blank">Azure Security Lab (AZ-500)</a>
+                <p class="muted">Hardened environment with RBAC, NSGs, Azure Firewall, Log Analytics and policy automation.</p>
+                <div style="margin-top:10px">
+                  <a class="btn ghost" href="azure-architecture.png" target="_blank">View diagram</a>
+                  <a class="btn ghost" href="az-policy.json" target="_blank">Policy JSON</a>
+                </div>
               </div>
             </li>
 
             <li class="project">
               <div class="tag" style="background:linear-gradient(90deg,#ff8a65,#ff6b81)">DB</div>
               <div class="meta">
-                <!-- FIXED – direct root link -->
-                <a class="title" href="rikit_SQL_Backup_policy.docx" target="_blank">
-                  SQL Security & Backup Strategy
-                </a>
-                <p class="muted">Role-based access, automated backups, recovery playbook.</p>
+                <a class="title" href="rikit_SQL_Security_policy.docx" target="_blank">SQL Security & Backup Strategy</a>
+                <p class="muted">Role-based access, automated backup schedules, retention and recovery playbooks for SQL Server.</p>
+                <div style="margin-top:10px">
+                  <a class="btn ghost" href="rikit_SQL Backup policy.docx" target="_blank">Download backup policy</a>
+                </div>
               </div>
             </li>
 
             <li class="project">
               <div class="tag">Code</div>
               <div class="meta">
-                <a class="title" href="#">Python + SQL Automation Tool</a>
-                <p class="muted">Automated SQL tasks with pyodbc.</p>
+                <a class="title" href="app.py" target="_blank">Python + SQL Automation Tool</a>
+                <p class="muted">Scheduled exports and stored-procedure automation using pyodbc.</p>
+                <div style="margin-top:10px">
+                  <a class="btn ghost" href="app.py" target="_blank">View app.py</a>
+                  <a class="btn ghost" href="pythonProject.sql" target="_blank">SQL scripts</a>
+                </div>
               </div>
             </li>
 
@@ -177,7 +198,10 @@
               <div class="tag" style="background:linear-gradient(90deg,#9f7aea,#60a5fa)">Network</div>
               <div class="meta">
                 <a class="title" href="network-topology.pkt" target="_blank">Network Design Simulation</a>
-                <p class="muted">Multi-site VLAN + OSPF packet tracer project.</p>
+                <p class="muted">Packet Tracer/GNS3 design covering VLANs, OSPF, ACLs, NAT and full documentation.</p>
+                <div style="margin-top:10px">
+                  <a class="btn ghost" href="network-topology.pkt" target="_blank">Download .pkt</a>
+                </div>
               </div>
             </li>
 
@@ -187,34 +211,38 @@
         <article class="card appears delay-4" style="margin-top:16px">
           <h2>Experience</h2>
           <ul class="muted" style="padding-left:18px;margin:0">
-            <li><strong>Technical Sales Advisor — Best Buy</strong> (2023–2025)</li>
-            <li><strong>Customer Support — Techlink Solutions</strong> (2022–2023)</li>
-            <li><strong>Lab Assistant — SSC</strong> (2022)</li>
+            <li><strong>Technical Sales Advisor — Best Buy</strong> (Oct 2023 – Jun 2025)</li>
+            <li><strong>Customer Support Representative — Techlink Solutions</strong> (Oct 2022 – Jul 2023)</li>
+            <li><strong>Lab Assistant — Southwestern State College</strong> (May 2022 – Oct 2022)</li>
           </ul>
         </article>
+
       </section>
 
+      <!-- RIGHT -->
       <aside>
 
         <div class="card appears delay-2">
           <h2>Technical Skills</h2>
-          <div class="skills">
-            <div class="skill-card">Routing</div>
-            <div class="skill-card">VLANs</div>
-            <div class="skill-card">OSPF</div>
-            <div class="skill-card">Azure AD</div>
-            <div class="skill-card">Firewall</div>
-            <div class="skill-card">Windows Server</div>
-            <div class="skill-card">Linux</div>
+          <div class="skills" style="margin-top:10px">
+            <div class="skill-card">Routing & Switching</div>
+            <div class="skill-card">VLANs & Inter-VLAN</div>
+            <div class="skill-card">OSPF / EIGRP</div>
+            <div class="skill-card">Azure AD & RBAC</div>
+            <div class="skill-card">Azure Firewall / NSG</div>
+            <div class="skill-card">Windows Server / AD</div>
+            <div class="skill-card">Linux (Ubuntu)</div>
             <div class="skill-card">PowerShell</div>
             <div class="skill-card">Python</div>
-            <div class="skill-card">SQL</div>
+            <div class="skill-card">SQL Server</div>
+            <div class="skill-card">Ticketing (Jira / ServiceNow)</div>
+            <div class="skill-card">Remote Support (RDP / AnyDesk)</div>
           </div>
         </div>
 
         <div class="card appears delay-3" style="margin-top:16px">
           <h2>Languages</h2>
-          <p class="muted">English — Fluent</p>
+          <p class="muted">English — <strong>Fluent</strong></p>
           <p class="muted">Hindi — Intermediate</p>
           <p class="muted">Nepali — Native</p>
         </div>
@@ -222,28 +250,32 @@
         <div class="card appears delay-4" style="margin-top:16px">
           <h2>Certifications</h2>
 
-          <div class="cert-card">
-            <div class="cert-info">
-              <strong>Microsoft Azure Fundamentals (AZ-900)</strong>
-              <div class="muted">2024</div>
+          <div class="cert-list">
+            <div class="cert-card">
+              <div class="cert-info">
+                <strong>Microsoft Certified: Azure Fundamentals (AZ-900)</strong>
+                <div class="muted">2024 — Cloud fundamentals</div>
+              </div>
             </div>
-            <!-- FIXED – remove broken image -->
-            <img class="cert-img" src="az900.png" alt="AZ-900 certificate" onerror="this.style.display='none'">
-          </div>
 
-          <div class="cert-card">
-            <div class="cert-info">
-              <strong>CCNA</strong>
-              <div class="muted">In Progress</div>
+            <div class="cert-card">
+              <div class="cert-info">
+                <strong>Cisco Certified Network Associate (CCNA)</strong>
+                <div class="muted">In Progress — Routing & Switching</div>
+              </div>
             </div>
-            <img class="cert-img" src="ccna.png" alt="CCNA" onerror="this.style.display='none'">
           </div>
-
         </div>
 
         <div class="card appears delay-3" style="margin-top:16px">
           <h2>Contact</h2>
+          <p class="muted" style="margin:0 0 8px">Email</p>
           <a class="contact" href="mailto:rikitthapa03@gmail.com">rikitthapa03@gmail.com</a>
+
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+            <a class="btn ghost" href="https://github.com/rikit03" target="_blank">GitHub</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/rikit-thapa-294ab028a/" target="_blank">LinkedIn</a>
+          </div>
         </div>
 
       </aside>
@@ -251,5 +283,14 @@
 
     <footer>© 2025 Rikit Thapa — IT Support & Network Technician</footer>
   </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const els = document.querySelectorAll('.appears');
+      els.forEach((el, i) => {
+        el.style.animationDelay = (i * 80) + 'ms';
+      });
+    });
+  </script>
 </body>
 </html>
