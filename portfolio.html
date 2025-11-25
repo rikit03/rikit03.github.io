@@ -3,330 +3,270 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Rikit Thapa — IT Support & Networking Portfolio</title>
-  <meta name="description" content="Rikit Thapa — Computer Systems Technician. IT Support, Networking, Azure, Automation. Portfolio, projects and resume." />
+  <title>Rikit Thapa — IT Support | Network Technician</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
   <style>
-    /* ======= Theme variables (light default, dark overrides applied by .dark) ======= */
     :root{
-      --bg: #f6f8fb;
-      --panel: #ffffff;
-      --muted: #6b7280;
-      --text: #0b1320;
-      --accent1: #6c63ff;
-      --accent2: #06b6d4;
-      --card-radius: 14px;
-      --shadow: 0 10px 30px rgba(12,18,30,0.08);
-      --glass: rgba(255,255,255,0.7);
-    }
-    .dark {
-      --bg: #0b1020;
-      --panel: #0f1724;
-      --muted: #9aa4b2;
-      --text: #e6eef8;
-      --accent1: #8b7bff;
-      --accent2: #4fd1c5;
-      --shadow: 0 10px 30px rgba(2,6,23,0.6);
-      --glass: rgba(255,255,255,0.02);
+      --bg:#f4f7fe;
+      --card:#ffffff;
+      --text:#0b1320;
+      --muted:#6b7280;
+      --primary:#6366f1;
+      --secondary:#06b6d4;
+      --accent:#10b981;
+      --radius:16px;
+      --shadow:0 10px 35px rgba(0,0,0,0.07);
     }
 
-    /* ======= Base ======= */
-    *{box-sizing:border-box}
-    html,body{height:100%}
+    *{box-sizing:border-box;}
+
     body{
       margin:0;
-      font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
-      background: linear-gradient(180deg, var(--bg) 0%, rgba(250,250,255,0.6) 100%);
+      padding:32px;
+      background:var(--bg);
+      font-family:Inter,system-ui,-apple-system;
       color:var(--text);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.5;
-      padding:28px 18px;
     }
 
-    .wrap{max-width:1100px;margin:0 auto}
+    .container{max-width:1200px;margin:auto;}
 
-    /* ======= Header / Hero ======= */
+    /* HERO SECTION */
     .hero{
+      background:linear-gradient(135deg,#6366f112,#06b6d412);
+      padding:40px;
+      border-radius:var(--radius);
       display:flex;
-      gap:20px;
+      gap:32px;
       align-items:center;
-      padding:28px;
-      border-radius:16px;
-      background: linear-gradient(135deg, rgba(108,99,255,0.06), rgba(6,182,212,0.04));
       box-shadow:var(--shadow);
     }
+
     .avatar{
-      width:110px;height:110px;border-radius:14px;
-      background:linear-gradient(135deg,var(--accent1),var(--accent2));
-      color:white;font-size:36px;font-weight:800;display:flex;align-items:center;justify-content:center;
-      flex:0 0 110px;
-      box-shadow:0 8px 30px rgba(108,99,255,0.12);
+      width:135px;height:135px;border-radius:18px;
+      background:linear-gradient(135deg,var(--primary),var(--secondary));
+      display:flex;align-items:center;justify-content:center;
+      color:white;font-size:48px;font-weight:800;
+      box-shadow:var(--shadow);
     }
-    .hero h1{margin:0;font-size:26px}
-    .lead{margin:8px 0 0;color:var(--muted);font-size:14px}
-    .hero .actions{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+
+    .hero h1{
+      margin:0;
+      font-size:36px;
+      font-weight:800;
+      color:var(--primary);
+    }
+
+    .subtitle{
+      margin-top:6px;
+      font-size:18px;
+      color:var(--muted);
+      font-weight:500;
+    }
 
     .btn{
-      padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700;
-      display:inline-flex;align-items:center;gap:8px;border:0;cursor:pointer;
-      box-shadow:0 6px 18px rgba(12,18,30,0.06);
-      background:var(--panel);color:var(--text);
+      padding:12px 18px;
+      border-radius:12px;
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      font-weight:700;
+      gap:8px;
+      margin-right:8px;
     }
-    .btn.primary{background:linear-gradient(90deg,var(--accent1),var(--accent2));color:white}
-    .btn.ghost{background:transparent;border:1px solid rgba(12,18,30,0.06);color:var(--text)}
-    .btn.icon{padding:8px;border-radius:10px;background:transparent;border:1px solid rgba(12,18,30,0.06)}
 
-    /* dark mode button highlight */
-    .theme-toggle{margin-left:auto;}
+    .btn.primary{
+      background:linear-gradient(90deg,var(--primary),var(--secondary));
+      color:white;
+    }
 
-    /* ======= Grid layout ======= */
-    .grid{display:grid;grid-template-columns:2fr 1fr;gap:22px;margin-top:22px}
-    @media (max-width:980px){ .grid{grid-template-columns:1fr} .hero{flex-direction:column;align-items:flex-start} .avatar{width:96px;height:96px} }
+    .btn.ghost{
+      background:white;
+      border:1px solid #e5e7eb;
+      color:var(--text);
+    }
 
-    .card{background:var(--panel);padding:18px;border-radius:var(--card-radius);box-shadow:var(--shadow);transition:transform .18s}
-    .card:hover{transform:translateY(-6px)}
-    h2{margin:0 0 10px;font-size:18px}
-    .muted{color:var(--muted);font-size:14px}
+    /* LAYOUT */
+    .grid{
+      display:grid;
+      grid-template-columns:2fr 1fr;
+      gap:26px;
+      margin-top:28px;
+    }
 
-    /* ======= Projects ======= */
-    .projects{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px}
+    .card{
+      background:white;
+      padding:22px;
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+
+    .card h2{
+      margin-top:0;
+      font-size:26px;
+      font-weight:800;
+      color:var(--primary);
+      letter-spacing:-0.5px;
+    }
+
+    .item-title{
+      font-size:19px;
+      font-weight:700;
+      margin-bottom:4px;
+      color:var(--secondary);
+    }
+
+    /* PROJECTS */
+    .projects{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:16px;}
+
     .project{
-      display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:12px;border:1px solid rgba(12,18,30,0.04);
-      background:linear-gradient(180deg, rgba(12,18,30,0.01), rgba(12,18,30,0.005));
-    }
-    .tag{font-size:12px;padding:6px 10px;border-radius:999px;background:linear-gradient(90deg,var(--accent2),var(--accent1));color:white;font-weight:700}
-    .project .meta{flex:1}
-    .project a.title{font-weight:700;color:var(--text);text-decoration:none}
-    .project p{margin:6px 0 0 0;color:var(--muted);font-size:14px}
-
-    /* ======= Skills ======= */
-    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-    .skill-pill{padding:8px 12px;border-radius:999px;background:linear-gradient(90deg,#eef2ff,#fff8ed);font-weight:700;font-size:13px;color:#0b1220}
-
-    /* ======= Certifications ======= */
-    .cert-row{display:flex;flex-direction:column;gap:12px;margin-top:10px}
-    .cert{display:flex;gap:12px;align-items:center;justify-content:space-between}
-    .cert-info{flex:1;margin-right:12px}
-    .cert-img{width:120px;height:auto;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
-
-    /* ======= Contact & Footer ======= */
-    .contact-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-    footer{text-align:center;margin-top:26px;color:var(--muted);font-size:13px}
-
-    /* small screens tweaks */
-    @media (max-width:520px){
-      .cert{flex-direction:row;align-items:center}
-      .cert-img{width:100px}
+      background:#f9fafb;
+      padding:16px;
+      border-radius:14px;
+      border:1px solid #e5e7eb;
     }
 
-    /* helper for subtle separators */
-    .sep{height:1px;background:rgba(12,18,30,0.04);border-radius:2px;margin:12px 0}
+    .tag{
+      padding:5px 12px;
+      border-radius:999px;
+      background:linear-gradient(90deg,var(--secondary),var(--primary));
+      color:white;
+      font-size:12px;
+      font-weight:600;
+      display:inline-block;
+      margin-bottom:6px;
+    }
+
+    /* FOOTER */
+    footer{
+      margin-top:40px;
+      text-align:center;
+      color:var(--muted);
+      font-size:14px;
+    }
   </style>
 </head>
+
 <body>
-  <div class="wrap">
+<div class="container">
 
-    <!-- HERO -->
-    <header class="hero">
-      <div class="avatar" aria-hidden="true">RT</div>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="avatar">RT</div>
+    <div>
+      <h1>Rikit Thapa</h1>
+      <div class="subtitle">IT Support • Network Technician • Azure Enthusiast</div>
 
-      <div style="flex:1;min-width:0">
-        <h1>Rikit Thapa — Computer Systems Technician</h1>
-        <p class="lead muted">IT Support • Help Desk • Network Technician • Azure • Windows & Linux • Automation</p>
-
-        <div class="actions" role="group" aria-label="quick-links">
-          <!-- Developer instruction: local resume path provided below -->
-          <a class="btn primary" href="/mnt/data/resume.pdf" target="_blank" rel="noopener">📄 View Resume</a>
-          <a class="btn ghost" href="https://github.com/rikit03" target="_blank" rel="noopener">💻 GitHub</a>
-          <a class="btn ghost" href="https://www.linkedin.com/in/rikit-thapa-294ab028a/" target="_blank" rel="noopener">🔗 LinkedIn</a>
-
-          <!-- Theme toggle -->
-          <button id="themeToggle" class="btn icon theme-toggle" aria-pressed="false" title="Toggle dark mode">🌙</button>
-        </div>
-
-        <div class="contact-row muted" style="margin-top:10px">
-          <div>📍 Belleville, ON</div>
-          <div>•</div>
-          <div>🎓 Loyalist College — Diploma (2025)</div>
-        </div>
+      <div style="margin-top:16px;">
+        <a class="btn primary" href="Resume.pdf" target="_blank">📄 View Resume</a>
+        <a class="btn ghost" href="https://github.com/rikit03" target="_blank">GitHub</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/rikit-thapa-294ab028a/" target="_blank">LinkedIn</a>
       </div>
-    </header>
 
-    <!-- MAIN GRID -->
-    <main class="grid" role="main">
-      <!-- LEFT COLUMN -->
-      <section>
-        <!-- About -->
-        <article class="card" aria-labelledby="about-title">
-          <h2 id="about-title">About</h2>
-          <p class="muted">
-            Motivated Computer Systems Technician with practical experience in IT support, retail technical roles, and lab administration.
-            I build and secure cloud environments (Azure), design and simulate networks, and automate routine support tasks using Python and PowerShell.
-            I value clear documentation, rapid troubleshooting, and delivering an excellent end-user experience.
-          </p>
-        </article>
+      <div style="margin-top:10px;color:var(--muted);font-weight:500;">
+        📍 Belleville, ON &nbsp;•&nbsp; 🎓 Loyalist College (2025)
+      </div>
+    </div>
+  </header>
 
-        <!-- Projects -->
-        <article class="card" style="margin-top:16px" aria-labelledby="projects-title">
-          <h2 id="projects-title">Highlighted Projects</h2>
+  <!-- MAIN GRID -->
+  <main class="grid">
 
-          <ul class="projects" aria-live="polite">
-            <li class="project" aria-label="Azure Security Lab">
-              <div class="tag">Cloud</div>
-              <div class="meta">
-                <a class="title" href="projects/azure-security-lab/" target="_blank">Azure Security Lab (AZ-500)</a>
-                <p class="muted">Hardened Azure environment using RBAC, NSGs, Azure Firewall, monitoring (Log Analytics) and ARM/Bicep templates.</p>
-                <div style="margin-top:8px">
-                  <a class="btn ghost" href="projects/azure-security-lab/azure-architecture.png" target="_blank">View diagram</a>
-                  <a class="btn ghost" href="projects/azure-security-lab/az-policy.json" target="_blank">Policy JSON</a>
-                </div>
-              </div>
-            </li>
+    <!-- LEFT CONTENT -->
+    <section>
 
-            <li class="project" aria-label="SQL Security and Backup Strategy">
-              <div class="tag" style="background:linear-gradient(90deg,#ffb366,#ff7b7b)">DB</div>
-              <div class="meta">
-                <a class="title" href="projects/sql/rikit_SQL_Security_policy.docx" target="_blank">SQL Security & Backup Strategy</a>
-                <p class="muted">Role-based access, automated backups, retention policies, and recovery procedures for SQL Server environments.</p>
-                <div style="margin-top:8px">
-                  <a class="btn ghost" href="projects/sql/rikit_SQL%20Backup%20policy.docx" target="_blank">Download backup policy</a>
-                  <a class="btn ghost" href="projects/sql/rikit_SQL_Security_policy.docx" target="_blank">Download security policy</a>
-                </div>
-              </div>
-            </li>
+      <div class="card">
+        <h2>About Me</h2>
+        <p>
+          Motivated IT Support & Network Technician with hands-on experience in troubleshooting,
+          Azure cloud administration, Office 365, Active Directory, networking, and automation using Python & PowerShell.
+        </p>
+      </div>
 
-            <li class="project" aria-label="Python SQL automation">
-              <div class="tag">Code</div>
-              <div class="meta">
-                <a class="title" href="projects/python-sql/app.py" target="_blank">Python + SQL Automation Tool</a>
-                <p class="muted">Automation script (pyodbc) to run scheduled queries, export reports and call stored procedures. Includes SQL scripts and examples.</p>
-                <div style="margin-top:8px">
-                  <a class="btn ghost" href="projects/python-sql/app.py" target="_blank">app.py</a>
-                  <a class="btn ghost" href="projects/python-sql/pythonProject.sql" target="_blank">SQL Script</a>
-                </div>
-              </div>
-            </li>
+      <div class="card" style="margin-top:20px;">
+        <h2>Highlighted Projects</h2>
 
-            <li class="project" aria-label="Network design simulation">
-              <div class="tag" style="background:linear-gradient(90deg,#9f7aea,#60a5fa)">Network</div>
-              <div class="meta">
-                <a class="title" href="projects/network/network-topology.pkt" target="_blank">Network Design Simulation</a>
-                <p class="muted">Packet Tracer / GNS3 multi-site topology with VLANs, OSPF, DHCP, ACLs and NAT — with full device configs.</p>
-                <div style="margin-top:8px">
-                  <a class="btn ghost" href="projects/network/network-topology.pkt" target="_blank">Download .pkt</a>
-                  <a class="btn ghost" href="projects/network/network-docs.pdf" target="_blank">Documentation</a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </article>
+        <ul class="projects">
 
-        <!-- Experience -->
-        <article class="card" style="margin-top:16px" aria-labelledby="exp-title">
-          <h2 id="exp-title">Experience</h2>
-          <ul class="muted" style="padding-left:18px;margin:0">
-            <li><strong>Technical Sales Advisor — Best Buy</strong> (Oct 2023 – Jun 2025): customer support, device troubleshooting, assisted Geek Squad.</li>
-            <li><strong>Customer Support Representative — Techlink Solutions</strong> (Oct 2022 – Jul 2023): phone/email/chat triage and resolution.</li>
-            <li><strong>Lab Assistant — Southwestern State College</strong> (May 2022 – Oct 2022): VM provisioning, lab maintenance, and student support.</li>
-          </ul>
-        </article>
-      </section>
+          <li class="project">
+            <div class="tag">Cloud</div>
+            <div class="item-title">Azure Security Lab (AZ-500)</div>
+            <p>RBAC, NSGs, Azure Firewall, Log Analytics, Sentinel, Policies.</p>
+            <a class="btn ghost" href="projects/azure-security-lab/azure-architecture.png">View Diagram</a>
+          </li>
 
-      <!-- RIGHT SIDEBAR -->
-      <aside>
-        <div class="card" aria-labelledby="skills-title">
-          <h2 id="skills-title">Technical Skills</h2>
-          <div class="skills" style="margin-top:10px">
-            <div class="skill-pill">Routing & Switching</div>
-            <div class="skill-pill">VLANs / Inter-VLAN Routing</div>
-            <div class="skill-pill">OSPF / EIGRP</div>
-            <div class="skill-pill">Azure AD & RBAC</div>
-            <div class="skill-pill">Azure Firewall / NSG</div>
-            <div class="skill-pill">Windows Server</div>
-            <div class="skill-pill">Linux (Ubuntu)</div>
-            <div class="skill-pill">PowerShell</div>
-            <div class="skill-pill">Python</div>
-            <div class="skill-pill">SQL Server</div>
-            <div class="skill-pill">Ticketing Systems (Jira/ServiceNow)</div>
-            <div class="skill-pill">Remote Support (RDP/AnyDesk)</div>
-          </div>
-        </div>
+          <li class="project">
+            <div class="tag">Database</div>
+            <div class="item-title">SQL Security & Backup Strategy</div>
+            <a class="btn ghost" href="projects/sql/rikit_SQL Backup policy.docx">Backup Policy</a>
+            <a class="btn ghost" href="projects/sql/rikit_SQL_Security_policy.docx">Security Policy</a>
+          </li>
 
-        <div class="card" style="margin-top:16px" aria-labelledby="languages-title">
-          <h2 id="languages-title">Languages</h2>
-          <div style="margin-top:10px">
-            <div class="skill-pill" style="display:inline-block">English — Fluent</div>
-            <div class="skill-pill" style="display:inline-block">Hindi — Intermediate</div>
-            <div class="skill-pill" style="display:inline-block">Nepali — Native</div>
-          </div>
-        </div>
+          <li class="project">
+            <div class="tag">Automation</div>
+            <div class="item-title">Python + SQL Automation Tool</div>
+            <a class="btn ghost" href="projects/python-sql/app.py">View Script</a>
+            <a class="btn ghost" href="projects/python-sql/pythonProject.sql">SQL File</a>
+          </li>
 
-        <div class="card" style="margin-top:16px" aria-labelledby="certs-title">
-          <h2 id="certs-title">Certifications</h2>
-          <div class="cert-row">
-            <div class="cert" role="group" aria-label="AZ-900">
-              <div class="cert-info">
-                <strong>Microsoft Certified: Azure Fundamentals (AZ-900)</strong>
-                <div class="muted">2024</div>
-              </div>
-              <!-- If you uploaded images, update the path; otherwise this is a placeholder -->
-              <img class="cert-img" src="certifications/az900.png" alt="AZ-900 certificate">
-            </div>
+          <li class="project">
+            <div class="tag">Networking</div>
+            <div class="item-title">Network Design Simulation</div>
+            <a class="btn ghost" href="projects/network/network-topology.pkt">Topology File</a>
+            <a class="btn ghost" href="projects/network/network-docs.pdf">Documentation</a>
+          </li>
 
-            <div class="cert" role="group" aria-label="CCNA">
-              <div class="cert-info">
-                <strong>Cisco Certified Network Associate (CCNA)</strong>
-                <div class="muted">In Progress</div>
-              </div>
-              <img class="cert-img" src="certifications/ccna.png" alt="CCNA certificate">
-            </div>
-          </div>
-        </div>
+        </ul>
+      </div>
 
-        <div class="card" style="margin-top:16px" aria-labelledby="contact-title">
-          <h2 id="contact-title">Contact</h2>
-          <p class="muted" style="margin:0 0 8px">Email: <a href="mailto:rikitthapa03@gmail.com">rikitthapa03@gmail.com</a></p>
-          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
-            <a class="btn ghost" href="https://github.com/rikit03" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn ghost" href="https://www.linkedin.com/in/rikit-thapa-294ab028a/" target="_blank" rel="noopener">LinkedIn</a>
-          </div>
-        </div>
-      </aside>
-    </main>
+      <div class="card" style="margin-top:20px;">
+        <h2>Experience</h2>
+        <ul>
+          <li><strong>Technical Sales Advisor — Best Buy</strong> (2023–2025)</li>
+          <li><strong>Customer Support — Techlink Solutions</strong> (2022–2023)</li>
+          <li><strong>Lab Assistant — Southwestern State College</strong> (2022)</li>
+        </ul>
+      </div>
 
-    <footer>© 2025 Rikit Thapa — IT Support & Networking Portfolio</footer>
-  </div>
+    </section>
 
-  <script>
-    // Theme toggle: saves preference in localStorage and applies .dark to <html> element
-    (function() {
-      const toggle = document.getElementById('themeToggle');
-      const rootEl = document.documentElement; // <html>
-      const KEY = 'rk_theme';
-      // initialize
-      function applyTheme(theme) {
-        if (theme === 'dark') rootEl.classList.add('dark');
-        else rootEl.classList.remove('dark');
-        // update aria-pressed and icon
-        toggle.setAttribute('aria-pressed', theme === 'dark');
-        toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
-      }
-      const saved = localStorage.getItem(KEY);
-      if (saved) applyTheme(saved);
-      else {
-        // default: prefer dark if user prefers-color-scheme
-        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        applyTheme(prefersDark ? 'dark' : 'light');
-      }
+    <!-- RIGHT SIDEBAR -->
+    <aside>
 
-      toggle.addEventListener('click', () => {
-        const isDark = rootEl.classList.contains('dark');
-        const next = isDark ? 'light' : 'dark';
-        applyTheme(next);
-        localStorage.setItem(KEY, next);
-      });
-    })();
-  </script>
+      <div class="card">
+        <h2>Skills</h2>
+        <p>
+          • Routing & Switching<br>
+          • VLANs, OSPF, Subnetting<br>
+          • Azure Administration<br>
+          • Windows Server, AD, Group Policy<br>
+          • Linux Systems<br>
+          • SQL Server<br>
+          • Python, PowerShell<br>
+        </p>
+      </div>
+
+      <div class="card" style="margin-top:20px;">
+        <h2>Certifications</h2>
+        <p>✔ Microsoft AZ-900 — Azure Fundamentals</p>
+        <p>✔ Cisco CCNA — Networking & Infrastructure</p>
+        <hr>
+        <p><strong>Languages:</strong> English (Fluent)</p>
+      </div>
+
+      <div class="card" style="margin-top:20px;">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:rikitthapa03@gmail.com">rikitthapa03@gmail.com</a></p>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <footer>
+    © 2025 — Rikit Thapa • IT Support & Network Technician
+  </footer>
+
+</div>
 </body>
 </html>
