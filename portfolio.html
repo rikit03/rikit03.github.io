@@ -113,37 +113,22 @@
 
     /* ================= PROJECTS ================= */
     .projects{
-      display:flex;
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
       gap:18px;
-      overflow-x:auto;
-      padding-bottom:12px;
       list-style:none;margin:0;padding-left:0;
-      scroll-snap-type:x mandatory;
     }
-    .projects::-webkit-scrollbar{display:none;}
     .project{
-      min-width:300px;
-      flex:0 0 auto;
       background:#0f172a;
       color:#e5e7eb;
       border-radius:22px;
       padding:22px;
-      position:relative;
-      scroll-snap-align:start;
-      transition:.35s;
-    }
-    .project::before{
-      content:"";
-      position:absolute;inset:0;
-      background:linear-gradient(120deg,transparent,rgba(255,255,255,.08),transparent);
-      opacity:0;
       transition:.35s;
     }
     .project:hover{
-      transform:translateY(-8px) scale(1.02);
-      box-shadow:0 24px 50px rgba(0,0,0,.45)
+      transform:translateY(-6px) scale(1.02);
+      box-shadow:0 24px 50px rgba(0,0,0,.25)
     }
-    .project:hover::before{opacity:1}
     .tag{
       display:inline-block;
       font-size:12px;
@@ -162,7 +147,7 @@
     }
     .title:hover{color:#60a5fa}
     .bullets{margin:12px 0 0 18px;color:#cbd5f5;}
-    .actions{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap;}
+    .project .actions{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;}
 
     /* ================= TECH SKILLS ================= */
     .skills .skill-card{
@@ -173,6 +158,11 @@
       font-weight:600;
       margin:6px 0;
     }
+
+    /* ================= CERTIFICATIONS ================= */
+    .cert-list{display:flex;flex-direction:column;gap:14px;margin-top:10px;}
+    .cert-card{display:flex;align-items:center;gap:12px;}
+    .cert-card .cert-info{display:flex;flex-direction:column;}
 
     /* ================= DARK MODE ================= */
     [data-theme="dark"]{
@@ -245,7 +235,6 @@
       <article class="card appears delay-3" style="margin-top:16px">
         <h2>Highlighted Projects</h2>
         <ul class="projects">
-          <!-- All your project items remain exactly the same -->
           <!-- Project 1 -->
           <li class="project">
             <div class="tag" style="background:linear-gradient(90deg,#8b5cf6,#3b82f6)">Troubleshooting</div>
@@ -261,7 +250,6 @@
               <a class="btn ghost" href="project.pdf" download>Download</a>
             </div>
           </li>
-
           <!-- Project 2 -->
           <li class="project">
             <div class="tag" style="background:linear-gradient(90deg,#4f46e5,#3b82f6)">Windows Server</div>
@@ -273,7 +261,6 @@
               </div>
             </div>
           </li>
-
           <!-- Project 3 -->
           <li class="project">
             <div class="tag" style="background:linear-gradient(90deg,#ff8a65,#ff6b81)">Database</div>
@@ -286,7 +273,6 @@
               </div>
             </div>
           </li>
-
           <!-- Project 4 -->
           <li class="project">
             <div class="tag" style="background:linear-gradient(90deg,#9f7aea,#60a5fa)">Code</div>
@@ -299,7 +285,6 @@
               </div>
             </div>
           </li>
-
           <!-- Project 5 -->
           <li class="project">
             <div class="tag" style="background:linear-gradient(90deg,#9f7aea,#60a5fa)">Networking </div>
@@ -373,5 +358,14 @@
         <h2>Contact</h2>
         <p class="muted" style="margin:0 0 8px">Email</p>
         <a class="contact" href="mailto:rikitthapa03@gmail.com">rikitthapa03@gmail.com</a>
-        <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
-         
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    &copy; 2025 Rikit Thapa — All rights reserved.
+  </footer>
+</div>
+
+</body>
+</html>
