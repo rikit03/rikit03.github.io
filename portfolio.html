@@ -114,20 +114,25 @@
     /* ================= PROJECTS ================= */
     .projects{
       display:grid;
-      grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+      grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
       gap:18px;
-      list-style:none;margin:0;padding-left:0;
+      list-style:none;
+      margin:0;
+      padding-left:0;
     }
     .project{
       background:#0f172a;
       color:#e5e7eb;
       border-radius:22px;
       padding:22px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
       transition:.35s;
     }
     .project:hover{
       transform:translateY(-6px) scale(1.02);
-      box-shadow:0 24px 50px rgba(0,0,0,.25)
+      box-shadow:0 24px 50px rgba(0,0,0,.25);
     }
     .tag{
       display:inline-block;
@@ -136,18 +141,26 @@
       padding:6px 14px;
       border-radius:999px;
       color:#fff;
-      margin-bottom:12px
+      margin-bottom:12px;
     }
     .title{
       display:block;
       font-size:18px;
       font-weight:800;
       color:#e5e7eb;
-      margin-bottom:8px
+      margin-bottom:8px;
     }
-    .title:hover{color:#60a5fa}
-    .bullets{margin:12px 0 0 18px;color:#cbd5f5;}
-    .project .actions{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;}
+    .title:hover{color:#60a5fa;}
+    .bullets{
+      margin:12px 0 0 18px;
+      color:#cbd5f5;
+    }
+    .project .actions{
+      margin-top:12px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
 
     /* ================= TECH SKILLS ================= */
     .skills .skill-card{
