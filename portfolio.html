@@ -9,16 +9,16 @@
   <style>
     /* ================= ROOT & BASE ================= */
     :root{
-      --bg: linear-gradient(180deg,#f7fbff 0%, #f3f6ff 100%);
+      --bg: linear-gradient(180deg,#f0f4ff 0%, #e8efff 100%);
       --panel:#ffffff;
       --text:#0b1320;
       --muted:#6b7280;
-      --primary:#3751ff;
+      --primary:#4f46e5;
       --teal:#06b6d4;
-      --accent:#8b5cf6;
+      --accent:#f472b6;
       --success:#10b981;
-      --radius:16px;
-      --shadow:0 18px 50px rgba(10,15,30,.08);
+      --radius:18px;
+      --shadow:0 20px 60px rgba(0,0,0,.08);
       --max-width:1200px;
     }
 
@@ -29,7 +29,7 @@
       background:var(--bg);
       color:var(--text);
       line-height:1.6;
-      padding:28px 18px;
+      padding:30px 20px;
     }
     .wrap{max-width:var(--max-width);margin:0 auto;}
 
@@ -42,27 +42,28 @@
 
     /* ================= HERO ================= */
     .hero{
-      display:flex;gap:24px;align-items:center;
-      background:linear-gradient(135deg,rgba(55,81,255,.08),rgba(6,182,212,.06));
-      padding:32px;border-radius:22px;box-shadow:var(--shadow);
+      display:flex;gap:28px;align-items:center;
+      background:linear-gradient(135deg,rgba(79,70,229,.1),rgba(6,182,212,.08));
+      padding:36px;border-radius:28px;box-shadow:var(--shadow);
+      transition:all .3s ease;
     }
     .avatar{
-      width:110px;height:110px;border-radius:18px;
+      width:120px;height:120px;border-radius:20px;
       background:linear-gradient(135deg,var(--primary),var(--teal));
-      color:#fff;font-size:36px;font-weight:800;
+      color:#fff;font-size:40px;font-weight:800;
       display:flex;align-items:center;justify-content:center;
       flex-shrink:0;
-      transition:transform .3s ease;
+      transition:transform .3s ease, box-shadow .3s ease;
     }
-    .hero:hover .avatar{transform:rotate(-6deg) scale(1.05);}
-    .hero-title{margin:0;font-size:28px;font-weight:800;color:var(--primary);}
+    .hero:hover .avatar{transform:rotate(-6deg) scale(1.07);box-shadow:0 12px 30px rgba(79,70,229,.35);}
+    .hero-title{margin:0;font-size:30px;font-weight:800;color:var(--primary);}
     .hero-sub{margin:8px 0 0;color:var(--muted);font-weight:600;}
 
     /* ================= BUTTONS ================= */
-    .actions{margin-top:16px;display:flex;gap:12px;flex-wrap:wrap;}
+    .actions{margin-top:18px;display:flex;gap:14px;flex-wrap:wrap;}
     .btn{
       display:inline-flex;align-items:center;gap:8px;
-      padding:10px 16px;border-radius:14px;
+      padding:12px 18px;border-radius:16px;
       font-weight:700;text-decoration:none;
       transition:all .25s ease;
     }
@@ -71,25 +72,26 @@
       color:#fff;
     }
     .btn.primary:hover{
-      transform:translateY(-2px);
-      box-shadow:0 12px 30px rgba(55,81,255,.35)
+      transform:translateY(-3px);
+      box-shadow:0 14px 40px rgba(79,70,229,.35);
     }
     .btn.ghost{
       background:#fff;
-      border:1px solid rgba(0,0,0,.08);
-      color:var(--text)
+      border:1px solid rgba(0,0,0,.12);
+      color:var(--text);
     }
     .btn.ghost:hover{
       border-color:var(--primary);
-      color:var(--primary)
+      color:var(--primary);
+      box-shadow:0 8px 30px rgba(79,70,229,.15);
     }
 
     /* ================= LAYOUT ================= */
     .grid{
       display:grid;
       grid-template-columns:2fr 1fr;
-      gap:28px;
-      margin-top:28px;
+      gap:32px;
+      margin-top:32px;
     }
     @media(max-width:980px){
       .grid{grid-template-columns:1fr;}
@@ -98,33 +100,33 @@
 
     .card{
       background:var(--panel);
-      padding:24px;
-      border-radius:18px;
+      padding:28px;
+      border-radius:var(--radius);
       box-shadow:var(--shadow);
-      transition:.25s;
+      transition:.35s ease;
     }
     .card:hover{
       transform:translateY(-6px);
-      box-shadow:0 28px 70px rgba(10,15,30,.1)
+      box-shadow:0 28px 70px rgba(0,0,0,.12);
     }
 
-    h2{margin:0 0 16px;font-size:22px;color:var(--primary);}
+    h2{margin:0 0 18px;font-size:24px;color:var(--primary);}
     .muted{color:var(--muted);font-size:15px;}
 
     /* ================= PROJECTS ================= */
     .projects{
       display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
-      gap:18px;
+      grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+      gap:20px;
       list-style:none;
       margin:0;
       padding-left:0;
     }
     .project{
-      background:#0f172a;
+      background:linear-gradient(145deg,#1f2937,#111827);
       color:#e5e7eb;
       border-radius:22px;
-      padding:22px;
+      padding:24px;
       display:flex;
       flex-direction:column;
       justify-content:space-between;
@@ -132,7 +134,7 @@
     }
     .project:hover{
       transform:translateY(-6px) scale(1.02);
-      box-shadow:0 24px 50px rgba(0,0,0,.25);
+      box-shadow:0 28px 60px rgba(0,0,0,.3);
     }
     .tag{
       display:inline-block;
@@ -147,8 +149,9 @@
       display:block;
       font-size:18px;
       font-weight:800;
-      color:#e5e7eb;
-      margin-bottom:8px;
+      color:#f1f5f9;
+      margin-bottom:10px;
+      transition:.3s;
     }
     .title:hover{color:#60a5fa;}
     .bullets{
@@ -156,25 +159,32 @@
       color:#cbd5f5;
     }
     .project .actions{
-      margin-top:12px;
+      margin-top:14px;
       display:flex;
       flex-wrap:wrap;
-      gap:10px;
+      gap:12px;
     }
 
     /* ================= TECH SKILLS ================= */
     .skills .skill-card{
-      background:#f3f6ff;
+      background:linear-gradient(135deg,#eff6ff,#dbeafe);
       color:#0b1320;
-      padding:10px 14px;
-      border-radius:12px;
+      padding:12px 16px;
+      border-radius:14px;
       font-weight:600;
       margin:6px 0;
+      box-shadow:0 4px 20px rgba(0,0,0,.05);
+      transition:all .25s ease;
+    }
+    .skills .skill-card:hover{
+      transform:translateY(-2px);
+      box-shadow:0 12px 30px rgba(79,70,229,.15);
     }
 
     /* ================= CERTIFICATIONS ================= */
-    .cert-list{display:flex;flex-direction:column;gap:14px;margin-top:10px;}
-    .cert-card{display:flex;align-items:center;gap:12px;}
+    .cert-list{display:flex;flex-direction:column;gap:16px;margin-top:12px;}
+    .cert-card{display:flex;align-items:center;gap:14px;background:#f3f6ff;padding:12px;border-radius:14px;transition:.25s;box-shadow:0 6px 20px rgba(0,0,0,.05);}
+    .cert-card:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(79,70,229,.15);}
     .cert-card .cert-info{display:flex;flex-direction:column;}
 
     /* ================= DARK MODE ================= */
@@ -186,20 +196,20 @@
       --primary:#60a5fa;
       --teal:#22d3ee;
       --accent:#a78bfa;
-      --shadow:0 18px 50px rgba(0,0,0,.6)
+      --shadow:0 18px 50px rgba(0,0,0,.6);
     }
     [data-theme="dark"] .hero{
-      background:linear-gradient(135deg,rgba(96,165,250,.15),rgba(34,211,238,.08))
+      background:linear-gradient(135deg,rgba(96,165,250,.15),rgba(34,211,238,.08));
     }
     [data-theme="dark"] .btn.ghost{
       background:#020617;
       color:#e5e7eb;
-      border-color:#334155
+      border-color:#334155;
     }
 
     /* ================= FOOTER ================= */
     footer{
-      margin-top:32px;
+      margin-top:36px;
       text-align:center;
       font-size:14px;
       color:var(--muted);
@@ -266,47 +276,39 @@
           <!-- Project 2 -->
           <li class="project">
             <div class="tag" style="background:linear-gradient(90deg,#4f46e5,#3b82f6)">Windows Server</div>
-            <div class="meta">
-              <a class="title" href="WindowsServerLab.pdf" target="_blank">Windows Server Domain Lab</a>
-              <p class="muted">Built a Windows Server 2022 VM, configured ADDS, DNS, DHCP, and Group Policies, and joined Windows client machines to a functional domain environment. Gained hands-on experience in enterprise authentication, domain management, and access control.</p>
-              <div style="margin-top:10px">
-                <a class="btn ghost" href="WindowsServerLab.pdf" target="_blank">View Project</a>
-              </div>
+            <a class="title" href="WindowsServerLab.pdf" target="_blank">Windows Server Domain Lab</a>
+            <p class="muted">Built a Windows Server 2022 VM, configured ADDS, DNS, DHCP, and Group Policies, and joined Windows client machines to a functional domain environment. Gained hands-on experience in enterprise authentication, domain management, and access control.</p>
+            <div class="actions">
+              <a class="btn ghost" href="WindowsServerLab.pdf" target="_blank">View Project</a>
             </div>
           </li>
           <!-- Project 3 -->
           <li class="project">
             <div class="tag" style="background:linear-gradient(90deg,#ff8a65,#ff6b81)">Database</div>
-            <div class="meta">
-              <a class="title" href="rikit_SQL_Security_policy.docx" target="_blank">SQL Security & Backup Strategy</a>
-              <p class="muted">This policy outlines how SQL Server security and backups are handled, including user authentication, RBAC permissions, and scheduled backup routines. It ensures the AdventureWorks database stays protected, compliant, and fully recoverable in case of failure.</p>
-              <div style="margin-top:10px">
-                <a class="btn ghost" href="rikit_SQL%20Backup%20policy.docx" target="_blank">Download backup policy</a>
-                <a class="btn ghost" href="rikit_SQL_Security_policy.docx" target="_blank">Download Security policy</a>
-              </div>
+            <a class="title" href="rikit_SQL_Security_policy.docx" target="_blank">SQL Security & Backup Strategy</a>
+            <p class="muted">This policy outlines how SQL Server security and backups are handled, including user authentication, RBAC permissions, and scheduled backup routines. It ensures the AdventureWorks database stays protected, compliant, and fully recoverable in case of failure.</p>
+            <div class="actions">
+              <a class="btn ghost" href="rikit_SQL%20Backup%20policy.docx" target="_blank">Download Backup Policy</a>
+              <a class="btn ghost" href="rikit_SQL_Security_policy.docx" target="_blank">Download Security Policy</a>
             </div>
           </li>
           <!-- Project 4 -->
           <li class="project">
             <div class="tag" style="background:linear-gradient(90deg,#9f7aea,#60a5fa)">Code</div>
-            <div class="meta">
-              <a class="title" href="import%20pyodbc.py" target="_blank">Python + SQL Automation Tool</a>
-              <p class="muted">This Python tool automates SQL Server updates through a Tkinter GUI, allowing users to modify product data with stored procedures. It securely connects using pyodbc and simplifies routine database maintenance. Ideal for quick, reliable SQL updates without manual queries.</p>
-              <div style="margin-top:10px">
-                <a class="btn ghost" href="rikit_main.py" target="_blank">View app.py</a>
-                <a class="btn ghost" href="PythonProject.sql" target="_blank">SQL scripts</a>
-              </div>
+            <a class="title" href="import%20pyodbc.py" target="_blank">Python + SQL Automation Tool</a>
+            <p class="muted">This Python tool automates SQL Server updates through a Tkinter GUI, allowing users to modify product data with stored procedures. It securely connects using pyodbc and simplifies routine database maintenance.</p>
+            <div class="actions">
+              <a class="btn ghost" href="rikit_main.py" target="_blank">View app.py</a>
+              <a class="btn ghost" href="PythonProject.sql" target="_blank">SQL Scripts</a>
             </div>
           </li>
           <!-- Project 5 -->
           <li class="project">
-            <div class="tag" style="background:linear-gradient(90deg,#9f7aea,#60a5fa)">Networking </div>
-            <div class="meta">
-              <a class="title" href="network-topology.pkt" target="_blank">Network Design Simulation</a>
-              <p class="muted">Packet Tracer/GNS3 design covering VLANs, OSPF, ACLs, NAT and full documentation.</p>
-              <div style="margin-top:10px">
-                <a class="btn ghost" href="network-topology.pkt" target="_blank">Download .pkt</a>
-              </div>
+            <div class="tag" style="background:linear-gradient(90deg,#9f7aea,#60a5fa)">Networking</div>
+            <a class="title" href="network-topology.pkt" target="_blank">Network Design Simulation</a>
+            <p class="muted">Packet Tracer/GNS3 design covering VLANs, OSPF, ACLs, NAT and full documentation.</p>
+            <div class="actions">
+              <a class="btn ghost" href="network-topology.pkt" target="_blank">Download .pkt</a>
             </div>
           </li>
         </ul>
