@@ -1,100 +1,117 @@
-# 👋 Hi, I'm Rikit Thapa
+# 👋 Rikit Thapa
 
 ## IT Support Technician | Service Desk | NOC | Networking
 
-🎓 **Computer Systems Networking Technician — Loyalist College**  
-🌐 **Cisco Certified Network Associate (CCNA)**  
-☁️ **Microsoft Azure Fundamentals (AZ-900)**  
-🛡️ **Fortinet Certified Associate in Cybersecurity**
+Computer Systems Networking Technician focused on **IT support, Windows administration, Microsoft 365, Active Directory, networking, and technical troubleshooting**.
 
-IT Support and Networking professional focused on **Windows, Active Directory, Microsoft 365, Entra ID, networking, and technical troubleshooting**.
+I build hands-on IT labs that simulate real-world support and infrastructure environments, documenting how I **identify, troubleshoot, resolve, verify, and document** technical issues.
 
-I build hands-on labs that simulate real-world IT environments and demonstrate my ability to **troubleshoot, resolve, verify, and document technical issues**.
-
-> **Identify → Investigate → Troubleshoot → Resolve → Verify → Document**
+🎓 Computer Systems Networking Technician — Loyalist College  
+🌐 Cisco Certified Network Associate (CCNA)  
+☁️ Microsoft Azure Fundamentals (AZ-900)  
+🛡️ Fortinet Certified Associate in Cybersecurity  
 
 ---
 
 # 🎯 Career Focus
 
-Currently seeking entry-level opportunities in:
+Seeking entry-level opportunities in:
 
-**IT Support**  
-IT Support Technician • Service Desk Analyst • Help Desk Technician • Desktop Support • Technical Support
-
-**Networking / NOC**  
-NOC Technician • NOC Analyst • Network Support Technician • Junior Network Technician
+- IT Support Technician
+- Service Desk Analyst
+- Help Desk Technician
+- Desktop Support Technician
+- Technical Support Specialist
+- IT Support Specialist
+- NOC Technician
+- Network Support Technician
+- Junior Network Technician
 
 ---
 
 # 🧰 Technical Skills
 
-**🖥️ Windows & Systems**  
+### 🖥️ Windows & Systems
 `Windows 11` `Windows Server` `Active Directory` `DNS` `Group Policy` `PowerShell`
 
-**☁️ Microsoft 365 & Identity**  
-`Microsoft 365` `Microsoft Entra ID` `MFA` `User Administration` `Access Management`
+### ☁️ Microsoft 365 & Identity
+`Microsoft 365` `Microsoft Entra ID` `MFA` `User Administration` `Identity & Access`
 
-**🌐 Networking**  
+### 🌐 Networking
 `TCP/IP` `IPv4` `Subnetting` `VLANs` `DHCP` `DNS` `Routing` `Switching` `NAT` `ACLs`
 
-**🎫 IT Support**  
-`Incident Troubleshooting` `Ticket Management` `Account Support` `Hardware/Software Troubleshooting` `Root-Cause Analysis` `Technical Documentation`
+### 🎫 IT Support
+`Incident Troubleshooting` `Ticket Management` `Account & Access Support`  
+`Hardware/Software Troubleshooting` `Root-Cause Analysis` `Technical Documentation`
 
-**🛠️ Tools**  
+### 🛠️ Tools
 `ServiceNow` `Jira` `osTicket` `Cisco Packet Tracer` `VirtualBox` `PowerShell` `Git` `GitHub`
 
 ---
 
 # 🚀 Featured IT Projects
 
-Four hands-on labs demonstrating practical troubleshooting, administration, networking, and Service Desk workflows.
-
-### 01 — 🖥️ Windows IT Support & Active Directory Lab
-
-**Windows Server • Windows 11 • Active Directory • DNS • Group Policy • PowerShell**
-
-Simulated a business Windows environment and practiced common Level 1 support scenarios including **account management, permissions, DNS, domain connectivity, Group Policy, and Windows troubleshooting**.
-
-🔗 **[View Project Repository](https://github.com/rikit03/-Windows-IT-Support-Active-Directory-Lab)**
+Hands-on projects demonstrating practical **IT support, system administration, cloud identity, networking, incident management, and troubleshooting** skills.
 
 ---
 
-### 02 — ☁️ Microsoft 365 & Entra ID Support Lab
+## 01 — 🖥️ Windows IT Support & Active Directory Lab
 
-**Microsoft 365 • Entra ID • Identity • Authentication • PowerShell**
+Simulated a business Windows environment to practice **Active Directory administration and Level 1 IT support troubleshooting**.
 
-Built a Microsoft cloud support environment focused on **user administration, access management, authentication, MFA, onboarding/offboarding, and Microsoft 365 troubleshooting**.
+**Focus:**  
+Windows Server • Windows 11 • Active Directory • DNS • Group Policy • PowerShell
 
-🔗 **[View Project Repository](https://github.com/rikit03/Microsoft-365-Entra-ID-Admin-Lab)**
-
----
-
-### 03 — 🌐 Network Operations & Troubleshooting Lab
-
-**Cisco • TCP/IP • VLANs • DHCP • DNS • Routing • ACLs**
-
-Built and troubleshot simulated network environments covering **IP addressing, VLANs, routing, DHCP, DNS, ACLs, connectivity testing, and fault isolation**.
-
-🔗 **[View Project Repository](https://github.com/rikit03/Network-Operations-Troubleshooting-Lab)**
+🔗 **[View Repository](https://github.com/rikit03/-Windows-IT-Support-Active-Directory-Lab)**
 
 ---
 
-### 04 — 🎫 IT Service Desk Incident Management Lab
+## 02 — ☁️ Microsoft 365 & Entra ID Support Lab
 
-**osTicket • Windows 11 • PowerShell • Networking • Incident Management**
+Simulated a Microsoft cloud support environment focused on **user administration, identity, authentication, access management, and Microsoft 365 support**.
 
-Simulated a real Service Desk workflow from **ticket creation and prioritization through investigation, troubleshooting, resolution, verification, documentation, and escalation**.
+**Focus:**  
+Microsoft 365 • Entra ID • Users & Groups • MFA • Authentication • PowerShell
 
-🔗 **[View Project Repository](https://github.com/rikit03/IT-Service-Desk-Incident-Management-Lab)**
+🔗 **[View Repository](https://github.com/rikit03/Microsoft-365-Entra-ID-Admin-Lab)**
 
 ---
 
-# 🏆 What These Projects Demonstrate
+## 03 — 🌐 Network Operations & Troubleshooting Lab
 
-`Windows` • `Active Directory` • `Microsoft 365` • `Entra ID`  
-`Networking` • `Service Desk` • `PowerShell` • `Troubleshooting`  
-`Incident Management` • `Root-Cause Analysis` • `Technical Documentation`
+Built and troubleshot simulated network environments to demonstrate practical **network support and NOC troubleshooting** skills.
+
+**Focus:**  
+TCP/IP • VLANs • DHCP • DNS • Routing • Switching • ACLs • Network Troubleshooting
+
+🔗 **[View Repository](https://github.com/rikit03/Network-Operations-Troubleshooting-Lab)**
+
+---
+
+## 04 — 🎫 IT Service Desk Incident Management Lab
+
+Built a simulated Service Desk environment demonstrating the complete **incident lifecycle**, from ticket creation and investigation through resolution, verification, documentation, and escalation.
+
+**Focus:**  
+osTicket • Incident Management • Windows Support • Network Troubleshooting • Ticket Documentation • Root-Cause Analysis
+
+🔗 **[View Repository](https://github.com/rikit03/IT-Service-Desk-Incident-Management-Lab)**
+
+---
+
+# 🏆 Core Skills Demonstrated
+
+| Area | Skills |
+|---|---|
+| 🖥️ Windows | Windows 11, Windows Server, troubleshooting |
+| 👤 Identity | Active Directory, Entra ID, users, groups, access |
+| ☁️ Microsoft 365 | Administration, authentication, support |
+| 🌐 Networking | TCP/IP, VLANs, DHCP, DNS, routing, ACLs |
+| 🎫 Service Desk | Tickets, incidents, prioritization, escalation |
+| 🔎 Troubleshooting | Investigation, isolation, root-cause analysis |
+| ⚙️ Automation | PowerShell and administrative tasks |
+| 📝 Documentation | Technical notes, evidence, resolutions |
+| 💬 Support | User communication and issue resolution |
 
 ---
 
@@ -108,10 +125,14 @@ Simulated a real Service Desk workflow from **ticket creation and prioritization
 
 # 🎓 Education
 
-**Computer Systems Networking Technician**  
+### Computer Systems Networking Technician
+
 **Loyalist College**
 
-Focus: Networking • Windows Server • System Administration • Cybersecurity • Cloud • IT Support
+Focus areas include:
+
+`Networking` `Windows Server` `System Administration`  
+`Cybersecurity` `Cloud Technologies` `IT Troubleshooting`
 
 ---
 
@@ -122,14 +143,16 @@ I use a structured, evidence-based approach to technical problems:
 ```text
 Identify
    ↓
-Investigate
+Gather Information
    ↓
-Isolate
+Test & Investigate
    ↓
-Resolve
+Isolate the Problem
+   ↓
+Find Root Cause
+   ↓
+Resolve or Escalate
    ↓
 Verify
    ↓
 Document
-   ↓
-Escalate When Required
