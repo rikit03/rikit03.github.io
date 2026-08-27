@@ -7,9 +7,9 @@
 ☁️ **Microsoft Azure Fundamentals (AZ-900)**  
 🛡️ **Fortinet Certified Associate in Cybersecurity**
 
-I'm an IT Support and Networking professional focused on **Windows troubleshooting, Active Directory, Microsoft 365, networking, identity, and technical support**.
+I'm an **IT Support and Networking professional** focused on Windows troubleshooting, Active Directory, Microsoft 365, Entra ID, networking, and technical support.
 
-I build hands-on labs that simulate real-world IT support and infrastructure environments, documenting the **problem, investigation, troubleshooting process, resolution, and verification**.
+I build hands-on labs that simulate real-world IT environments and document my troubleshooting process from **problem identification to verified resolution**.
 
 > **Identify → Investigate → Troubleshoot → Resolve → Verify → Document**
 
@@ -17,7 +17,7 @@ I build hands-on labs that simulate real-world IT support and infrastructure env
 
 # 🎯 Career Focus
 
-I'm currently targeting entry-level opportunities in:
+Currently targeting entry-level opportunities in:
 
 ### 💻 IT Support
 - IT Support Technician
@@ -54,9 +54,9 @@ I'm currently targeting entry-level opportunities in:
 
 ### 🎫 IT Support
 
-`Incident Troubleshooting` `Ticket Management`  
-`Account & Access Support` `Hardware/Software Troubleshooting`  
-`Root-Cause Analysis` `Technical Documentation` `User Communication`
+`Incident Management` `Ticket Management` `Account & Access Support`  
+`Hardware/Software Troubleshooting` `Root-Cause Analysis`  
+`Technical Documentation` `User Communication`
 
 ### 🛠️ Tools
 
@@ -65,9 +65,9 @@ I'm currently targeting entry-level opportunities in:
 
 ---
 
-# 🚀 Featured IT Projects
+# 🚀 Featured IT Support & Networking Projects
 
-These projects demonstrate practical skills through **hands-on labs, troubleshooting scenarios, technical documentation, and evidence-based problem solving**.
+Hands-on labs demonstrating **technical troubleshooting, system administration, cloud identity, networking, incident management, and professional documentation**.
 
 ---
 
@@ -75,9 +75,9 @@ These projects demonstrate practical skills through **hands-on labs, troubleshoo
 
 **Windows Server • Windows 11 • Active Directory • DNS • Group Policy • PowerShell**
 
-Simulated a small-business Windows environment and practiced common **Level 1 IT Support and system administration scenarios**.
+A simulated business Windows environment designed to demonstrate common **Level 1 IT Support and system administration workflows**.
 
-### What I Practiced
+### Key Skills Demonstrated
 
 - Active Directory user and group administration
 - Password resets and account unlocks
@@ -93,9 +93,7 @@ Simulated a small-business Windows environment and practiced common **Level 1 IT
 
 **Issue → Investigation → Evidence → Root Cause → Resolution → Verification**
 
-### 🔗 Project Repository
-
-👉 **[View Windows IT Support & Active Directory Lab](https://github.com/rikit03/-Windows-IT-Support-Active-Directory-Lab)**
+🔗 **[View Project Repository](https://github.com/rikit03/-Windows-IT-Support-Active-Directory-Lab)**
 
 ---
 
@@ -103,9 +101,9 @@ Simulated a small-business Windows environment and practiced common **Level 1 IT
 
 **Microsoft 365 • Microsoft Entra ID • Identity • Authentication • PowerShell**
 
-Built a simulated Microsoft cloud support environment focused on **user administration, identity, authentication, access management, and help desk scenarios**.
+A simulated Microsoft cloud support environment focused on **identity administration, authentication, access management, and user support**.
 
-### What I Practiced
+### Key Skills Demonstrated
 
 - Microsoft 365 administration
 - Microsoft Entra ID user management
@@ -115,8 +113,8 @@ Built a simulated Microsoft cloud support environment focused on **user administ
 - Password management
 - Sign-in troubleshooting
 - MFA and authentication workflows
-- License/access troubleshooting
-- PowerShell administration and support checks
+- License and access troubleshooting
+- PowerShell administration
 
 ### Support Scenarios
 
@@ -129,9 +127,7 @@ Built a simulated Microsoft cloud support environment focused on **user administ
 - User offboarding
 - License/access issue
 
-### 🔗 Project Repository
-
-👉 **[View Microsoft 365 & Entra ID Support Lab](https://github.com/rikit03/Microsoft-365-Entra-ID-Admin-Lab)**
+🔗 **[View Project Repository](https://github.com/rikit03/Microsoft-365-Entra-ID-Admin-Lab)**
 
 ---
 
@@ -139,9 +135,9 @@ Built a simulated Microsoft cloud support environment focused on **user administ
 
 **Cisco • TCP/IP • VLANs • DHCP • DNS • Routing • ACLs**
 
-Built and troubleshot simulated network environments to demonstrate practical **network support and NOC troubleshooting skills**.
+A simulated network environment demonstrating practical **network support, troubleshooting, and NOC skills**.
 
-### What I Practiced
+### Key Skills Demonstrated
 
 - IPv4 addressing
 - Subnetting
@@ -149,13 +145,12 @@ Built and troubleshot simulated network environments to demonstrate practical **
 - Inter-VLAN routing
 - DHCP
 - DNS
-- Routing
-- Switching
+- Routing and switching
 - ACL configuration
 - Connectivity testing
 - Network fault isolation
 
-### NOC Scenarios
+### NOC Troubleshooting Scenarios
 
 - Incorrect IP configuration
 - DHCP failure
@@ -184,67 +179,3 @@ Fix
 Verify
    ↓
 Document
-
----
-
-## 04 — 🎫 IT Service Desk Incident Management Lab
-
-**osTicket • Windows 11 • PowerShell • Networking • Incident Management**
-
-Built a simulated IT Service Desk environment to demonstrate how I approach user-reported incidents from **ticket creation through troubleshooting, resolution, verification, and closure**.
-
-### Objective
-
-Demonstrate practical Service Desk skills through realistic support scenarios, structured troubleshooting, professional ticket documentation, and escalation decisions.
-
-### What I Practiced
-
-- Incident creation and ticket management
-- Incident categorization
-- Priority and impact assessment
-- User communication
-- Information gathering
-- Windows troubleshooting
-- Account and access troubleshooting
-- Network connectivity troubleshooting
-- DNS troubleshooting
-- Root-cause analysis
-- Resolution verification
-- Technical documentation
-- Incident escalation
-
-### Example Incidents
-
-- Password reset
-- Account lockout
-- Shared folder access
-- No internet connectivity
-- DNS resolution failure
-- Windows application issue
-- Slow Windows computer
-- VPN connectivity issue
-- MFA / login issue
-- Hardware and peripheral issue
-
-### Troubleshooting Workflow
-
-```text
-User Reports Issue
-        ↓
-Create Ticket
-        ↓
-Categorize & Prioritize
-        ↓
-Gather Information
-        ↓
-Troubleshoot
-        ↓
-Identify Root Cause
-        ↓
-Resolve or Escalate
-        ↓
-Verify Resolution
-        ↓
-Document
-        ↓
-Close Ticket
