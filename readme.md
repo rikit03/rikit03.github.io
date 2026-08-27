@@ -7,19 +7,19 @@
 ☁️ **Microsoft Azure Fundamentals (AZ-900)**  
 🛡️ **Fortinet Certified Associate in Cybersecurity**
 
-I'm an **IT Support and Networking professional** focused on Windows troubleshooting, Active Directory, Microsoft 365, Entra ID, networking, and technical support.
+I'm an **IT Support and Networking professional** focused on Windows troubleshooting, Active Directory, Microsoft 365, Entra ID, networking, identity, and technical support.
 
-I build hands-on labs that simulate real-world IT environments and document my troubleshooting process from **problem identification to verified resolution**.
+I build hands-on labs that simulate real-world IT environments and document my work using a structured approach:
 
 > **Identify → Investigate → Troubleshoot → Resolve → Verify → Document**
 
 ---
 
-# 🎯 Career Focus
+## 🎯 Career Focus
 
-Currently targeting entry-level opportunities in:
+I'm currently seeking opportunities in:
 
-### 💻 IT Support
+**IT Support**
 - IT Support Technician
 - Service Desk Analyst
 - Help Desk Technician
@@ -27,7 +27,7 @@ Currently targeting entry-level opportunities in:
 - Technical Support Specialist
 - IT Support Specialist
 
-### 🌐 Networking / NOC
+**Networking / NOC**
 - NOC Technician
 - NOC Analyst
 - Network Support Technician
@@ -56,7 +56,7 @@ Currently targeting entry-level opportunities in:
 
 `Incident Management` `Ticket Management` `Account & Access Support`  
 `Hardware/Software Troubleshooting` `Root-Cause Analysis`  
-`Technical Documentation` `User Communication`
+`Technical Documentation` `User Communication` `Escalation`
 
 ### 🛠️ Tools
 
@@ -65,9 +65,9 @@ Currently targeting entry-level opportunities in:
 
 ---
 
-# 🚀 Featured IT Support & Networking Projects
+# 🚀 Featured IT Projects
 
-Hands-on labs demonstrating **technical troubleshooting, system administration, cloud identity, networking, incident management, and professional documentation**.
+A collection of hands-on labs designed to demonstrate practical troubleshooting, administration, networking, and Service Desk capabilities.
 
 ---
 
@@ -75,12 +75,13 @@ Hands-on labs demonstrating **technical troubleshooting, system administration, 
 
 **Windows Server • Windows 11 • Active Directory • DNS • Group Policy • PowerShell**
 
-A simulated business Windows environment designed to demonstrate common **Level 1 IT Support and system administration workflows**.
+Simulated a small-business Windows environment to practice common **Level 1 IT Support and system administration scenarios**.
 
-### Key Skills Demonstrated
+### 🔧 What I Practiced
 
 - Active Directory user and group administration
 - Password resets and account unlocks
+- Disabled account troubleshooting
 - Domain joining
 - DNS troubleshooting
 - Group Policy
@@ -89,11 +90,13 @@ A simulated business Windows environment designed to demonstrate common **Level 
 - Windows connectivity troubleshooting
 - PowerShell diagnostics
 
-### Troubleshooting Approach
+### 🔎 Troubleshooting Method
 
 **Issue → Investigation → Evidence → Root Cause → Resolution → Verification**
 
-🔗 **[View Project Repository](https://github.com/rikit03/-Windows-IT-Support-Active-Directory-Lab)**
+### 📂 Project Repository
+
+👉 **[View Windows IT Support & Active Directory Lab](https://github.com/rikit03/-Windows-IT-Support-Active-Directory-Lab)**
 
 ---
 
@@ -101,9 +104,9 @@ A simulated business Windows environment designed to demonstrate common **Level 
 
 **Microsoft 365 • Microsoft Entra ID • Identity • Authentication • PowerShell**
 
-A simulated Microsoft cloud support environment focused on **identity administration, authentication, access management, and user support**.
+Built a simulated Microsoft cloud support environment focused on **user administration, identity, authentication, access management, and help desk workflows**.
 
-### Key Skills Demonstrated
+### 🔧 What I Practiced
 
 - Microsoft 365 administration
 - Microsoft Entra ID user management
@@ -116,7 +119,7 @@ A simulated Microsoft cloud support environment focused on **identity administra
 - License and access troubleshooting
 - PowerShell administration
 
-### Support Scenarios
+### 🎫 Support Scenarios
 
 - New employee onboarding
 - Sign-in failure
@@ -127,7 +130,9 @@ A simulated Microsoft cloud support environment focused on **identity administra
 - User offboarding
 - License/access issue
 
-🔗 **[View Project Repository](https://github.com/rikit03/Microsoft-365-Entra-ID-Admin-Lab)**
+### 📂 Project Repository
+
+👉 **[View Microsoft 365 & Entra ID Support Lab](https://github.com/rikit03/Microsoft-365-Entra-ID-Admin-Lab)**
 
 ---
 
@@ -135,9 +140,9 @@ A simulated Microsoft cloud support environment focused on **identity administra
 
 **Cisco • TCP/IP • VLANs • DHCP • DNS • Routing • ACLs**
 
-A simulated network environment demonstrating practical **network support, troubleshooting, and NOC skills**.
+Built and troubleshot simulated network environments to demonstrate practical **network support and NOC troubleshooting skills**.
 
-### Key Skills Demonstrated
+### 🔧 What I Practiced
 
 - IPv4 addressing
 - Subnetting
@@ -150,7 +155,7 @@ A simulated network environment demonstrating practical **network support, troub
 - Connectivity testing
 - Network fault isolation
 
-### NOC Troubleshooting Scenarios
+### 🚨 NOC Scenarios
 
 - Incorrect IP configuration
 - DHCP failure
@@ -161,20 +166,20 @@ A simulated network environment demonstrating practical **network support, troub
 - ACL blocking traffic
 - Gateway connectivity failure
 
-### Troubleshooting Workflow
+### 🔎 Troubleshooting Workflow
 
 ```text
 Identify
    ↓
 Gather Information
    ↓
-Test
+Test Connectivity
    ↓
-Isolate
+Isolate the Problem
    ↓
-Find Root Cause
+Identify Root Cause
    ↓
-Fix
+Apply Fix
    ↓
 Verify
    ↓
