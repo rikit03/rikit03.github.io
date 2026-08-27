@@ -156,3 +156,32 @@ Resolve or Escalate
 Verify
    ↓
 Document
+
+-----
+🔗 Portfolio & Professional Links
+
+🌐 Portfolio:
+https://rikit03.github.io/portfolio
+
+💻 GitHub:
+https://github.com/rikit03
+
+🔗 LinkedIn:
+https://www.linkedin.com/in/rikit-thapa-294ab028a
+
+📄 Resume:
+https://github.com/rikit03/rikit03.github.io/blob/main/resume.pdf
+
+📬 Contact
+
+Rikit Thapa
+
+📧 Email: rikitthapa2003@outlook.com
+
+💼 LinkedIn:
+https://www.linkedin.com/in/rikit-thapa-294ab028a
+
+💻 GitHub:
+https://github.com/rikit03
+
+📍 Ontario, Canada
