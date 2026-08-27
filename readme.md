@@ -184,3 +184,67 @@ Fix
 Verify
    ↓
 Document
+
+---
+
+## 04 — 🎫 IT Service Desk Incident Management Lab
+
+**osTicket • Windows 11 • PowerShell • Networking • Incident Management**
+
+Built a simulated IT Service Desk environment to demonstrate how I approach user-reported incidents from **ticket creation through troubleshooting, resolution, verification, and closure**.
+
+### Objective
+
+Demonstrate practical Service Desk skills through realistic support scenarios, structured troubleshooting, professional ticket documentation, and escalation decisions.
+
+### What I Practiced
+
+- Incident creation and ticket management
+- Incident categorization
+- Priority and impact assessment
+- User communication
+- Information gathering
+- Windows troubleshooting
+- Account and access troubleshooting
+- Network connectivity troubleshooting
+- DNS troubleshooting
+- Root-cause analysis
+- Resolution verification
+- Technical documentation
+- Incident escalation
+
+### Example Incidents
+
+- Password reset
+- Account lockout
+- Shared folder access
+- No internet connectivity
+- DNS resolution failure
+- Windows application issue
+- Slow Windows computer
+- VPN connectivity issue
+- MFA / login issue
+- Hardware and peripheral issue
+
+### Troubleshooting Workflow
+
+```text
+User Reports Issue
+        ↓
+Create Ticket
+        ↓
+Categorize & Prioritize
+        ↓
+Gather Information
+        ↓
+Troubleshoot
+        ↓
+Identify Root Cause
+        ↓
+Resolve or Escalate
+        ↓
+Verify Resolution
+        ↓
+Document
+        ↓
+Close Ticket
