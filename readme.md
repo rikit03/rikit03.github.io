@@ -149,10 +149,10 @@ Escalate When Required
 
 ## 🎯 Target Roles
 
-**IT Support**
+**IT Support** : 
 IT Support Technician · Service Desk Analyst · Help Desk Technician · Desktop Support Technician · Technical Support Specialist · IT Support Specialist
 
-**Networking / NOC**
+**Networking / NOC** : 
 NOC Technician · NOC Analyst · Network Support Technician · Junior Network Technician
 
 ---
