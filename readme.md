@@ -78,7 +78,7 @@ Built and troubleshot simulated network environments to demonstrate practical ne
 | Area                         | Skills                                                                                                                                             |
 | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Windows & Systems**        | Windows 11 · Windows Server · Active Directory · Group Policy · DNS · File Permissions · PowerShell                                                |
-| **Microsoft 365 & Identity** | Microsoft 365 · Entra ID · User Administration · Identity & Access · MFA · Authentication                                                          |
+| **Microsoft 365 & Identity** | Microsoft 365 · Microsoft Entra ID · User Administration · Identity & Access · MFA · Authentication                                                |
 | **Networking**               | TCP/IP · IPv4 · IPv6 · Subnetting · VLANs · DHCP · DNS · Routing · Switching · NAT · ACLs · ICMP                                                   |
 | **IT Support**               | Incident Management · Ticket Triage · Account & Access Support · Hardware/Software Troubleshooting · Root-Cause Analysis · Technical Documentation |
 | **Tools**                    | ServiceNow · Jira · osTicket · Cisco Packet Tracer · VirtualBox · PowerShell · Git · GitHub                                                        |
@@ -89,25 +89,33 @@ Built and troubleshot simulated network environments to demonstrate practical ne
 
 ### 🎓 Computer Systems Networking Technician
 
-**Loyalist College**
+**Loyalist College** · Graduated 2025
 
-Foundation in **networking, systems administration, cybersecurity, cloud technologies, and IT infrastructure.**
+*Focus: Networking · Systems Administration · Cybersecurity · Cloud · IT Infrastructure*
 
-### 🌐 Cisco Certified Network Associate — CCNA
+### 🌐 Cisco Certified Network Associate (CCNA)
 
 **Cisco**
 
-### ☁️ Microsoft Azure Fundamentals — AZ-900
+*Enterprise networking and network troubleshooting.*
+
+### ☁️ Microsoft Azure Fundamentals (AZ-900)
 
 **Microsoft**
+
+*Cloud concepts, Azure services, security, and governance.*
 
 ### 🛡️ Fortinet Certified Associate in Cybersecurity
 
 **Fortinet**
 
+*Cybersecurity and network security fundamentals.*
+
 ---
 
 # 🔎 Troubleshooting Approach
+
+I use a structured, evidence-based approach to technical problems:
 
 ```text
 Understand
@@ -144,8 +152,11 @@ NOC Technician · NOC Analyst · Network Support Technician · Junior Network Te
 # 🔗 Professional Links
 
 🌐 [**Portfolio Website**](https://rikit03.github.io/portfolio)
+
 💻 [**GitHub Profile**](https://github.com/rikit03)
+
 📄 [**Resume**](https://github.com/rikit03/rikit03.github.io/blob/main/resume.pdf)
+
 🔗 [**LinkedIn**](https://www.linkedin.com/in/rikit-thapa-294ab028a)
 
 ---
