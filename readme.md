@@ -157,8 +157,9 @@ Verify
    ↓
 Document
 
+
 -----
-🔗 Portfolio & Professional Links
+**🔗 Portfolio & Professional Links**
 
 🌐 Portfolio:
 https://rikit03.github.io/portfolio
@@ -172,7 +173,8 @@ https://www.linkedin.com/in/rikit-thapa-294ab028a
 📄 Resume:
 https://github.com/rikit03/rikit03.github.io/blob/main/resume.pdf
 
-📬 Contact
+--------
+**📬 Contact**
 
 Rikit Thapa
 
