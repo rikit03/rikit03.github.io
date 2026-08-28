@@ -171,4 +171,4 @@ All environments are simulated or personal lab environments and contain **no rea
 
 **Built and documented by Rikit Thapa**
 
-*IT Support · Service Desk · Networking · NOC*
+
