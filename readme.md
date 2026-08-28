@@ -2,7 +2,7 @@
 
 # 👋 Rikit Thapa
 
-### IT Support Technician · Service Desk · NOC · Networking
+### IT Support Technician | Service Desk | NOC | Networking
 
 **Ontario, Canada**
 
@@ -10,8 +10,6 @@
 [GitHub](https://github.com/rikit03) ·
 [Resume](https://github.com/rikit03/rikit03.github.io/blob/main/resume.pdf) ·
 [Portfolio](https://rikit03.github.io/portfolio)
-
-**CCNA** · **AZ-900** · **Fortinet Certified Associate in Cybersecurity**
 
 </div>
 
