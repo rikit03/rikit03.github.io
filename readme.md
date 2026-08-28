@@ -157,33 +157,58 @@ Verify
    ↓
 Document
 
+# 📜 Certifications
+- 🌐 **Cisco Certified Network Associate (CCNA)**
+- ☁️ **Microsoft Azure Fundamentals (AZ-900)**
+- 🛡️ **Fortinet Certified Associate in Cybersecurity**
 
------
+---
+
+# 🎓 Education
+### Computer Systems Networking Technician
+**Loyalist College**
+
+Focus areas include:
+`Networking` `Windows Server` `System Administration`
+`Cybersecurity` `Cloud Technologies` `IT Troubleshooting`
+
+---
+
+# 🧠 Troubleshooting Approach
+I use a structured, evidence-based approach to technical problems:
+
+```text
+Identify
+   ↓
+Gather Information
+   ↓
+Test & Investigate
+   ↓
+Isolate the Problem
+   ↓
+Find Root Cause
+   ↓
+Resolve or Escalate
+   ↓
+Verify
+   ↓
+Document
+
+---
+
 **🔗 Portfolio & Professional Links**
 
-🌐 Portfolio:
-https://rikit03.github.io/portfolio
+🌐 Portfolio: https://rikit03.github.io/portfolio
+💻 GitHub: https://github.com/rikit03
+🔗 LinkedIn: https://www.linkedin.com/in/rikit-thapa-294ab028a
+📄 Resume: https://github.com/rikit03/rikit03.github.io/blob/main/resume.pdf
 
-💻 GitHub:
-https://github.com/rikit03
+---
 
-🔗 LinkedIn:
-https://www.linkedin.com/in/rikit-thapa-294ab028a
-
-📄 Resume:
-https://github.com/rikit03/rikit03.github.io/blob/main/resume.pdf
-
---------
 **📬 Contact**
 
 Rikit Thapa
-
 📧 Email: rikitthapa2003@outlook.com
-
-💼 LinkedIn:
-https://www.linkedin.com/in/rikit-thapa-294ab028a
-
-💻 GitHub:
-https://github.com/rikit03
-
+💼 LinkedIn: https://www.linkedin.com/in/rikit-thapa-294ab028a
+💻 GitHub: https://github.com/rikit03
 📍 Ontario, Canada
