@@ -4,8 +4,6 @@
 
 ### IT Support Technician | Service Desk | NOC | Networking
 
-**Ontario, Canada**
-
 [LinkedIn](https://www.linkedin.com/in/rikit-thapa-294ab028a) ·
 [GitHub](https://github.com/rikit03) ·
 [Resume](https://github.com/rikit03/rikit03.github.io/blob/main/resume.pdf) ·
