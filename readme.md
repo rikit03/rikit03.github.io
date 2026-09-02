@@ -159,7 +159,7 @@ NOC Technician · NOC Analyst · Network Support Technician · Junior Network Te
 
 # 📬 Contact
 
-📧 **[rikitthapa2003@outlook.com](mailto:rikitthapa2003@outlook.com)**
+📧 **[rikitthapa.03@gmail.com](mailto:rikitthapa.03@gmail.com)**
 
 ---
 
