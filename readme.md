@@ -28,7 +28,7 @@ Active Directory · DNS · DHCP · Group Policy · Microsoft 365 · Entra ID · 
 TCP/IP · IPv4 · Subnetting · VLANs · 802.1Q Trunking · Inter-VLAN Routing · Cisco IOS
 
 **Tools**
-ServiceNow · Jira · osTicket · Cisco Packet Tracer · VirtualBox · Docker · WSL/Ubuntu · Git/GitHub
+Ticketing System · osTicket · Cisco Packet Tracer · VirtualBox · Docker · WSL/Ubuntu · Git/GitHub · Poweshell
 
 ---
 
