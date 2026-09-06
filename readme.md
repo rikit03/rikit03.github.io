@@ -18,16 +18,16 @@ I combine technical problem-solving with customer-service experience, with a foc
 
 ## 🛠️ Technical Skills
 
-**IT Support & Systems**
+**IT Support & Systems**: 
 Windows 11 · Windows Server 2022 · Troubleshooting · Incident Management · Technical Documentation · PowerShell
 
-**Microsoft & Identity**
+**Microsoft & Identity** : 
 Active Directory · DNS · DHCP · Group Policy · Microsoft 365 · Entra ID · MFA
 
-**Networking**
+**Networking** : 
 TCP/IP · IPv4 · Subnetting · VLANs · 802.1Q Trunking · Inter-VLAN Routing · Cisco IOS
 
-**Tools**
+**Tools** : 
 Ticketing System · osTicket · Cisco Packet Tracer · VirtualBox · Docker · WSL/Ubuntu · Git/GitHub · Poweshell
 
 ---
