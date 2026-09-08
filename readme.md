@@ -6,9 +6,9 @@
 🔗 **LinkedIn:** https://www.linkedin.com/in/rikit-thapa-294ab028
 💻 **GitHub:** https://github.com/rikit03
 
-IT Support-focused professional with a **Computer Systems Networking Technician diploma** and hands-on experience building and troubleshooting Windows, Active Directory, service desk, and Cisco networking environments.
+IT Support-focused professional with a **Computer Systems Networking Technician diploma** and hands-on experience building, configuring, and troubleshooting **Windows, Active Directory, service desk, and Cisco networking environments**.
 
-I combine technical problem-solving with customer-service experience, with a focus on **end-user support, troubleshooting, incident management, system administration, and networking**.
+I combine technical problem-solving with customer-service experience, with a focus on **end-user support, incident troubleshooting, system administration, networking, and technical documentation**.
 
 ### Target Roles
 
@@ -16,19 +16,19 @@ I combine technical problem-solving with customer-service experience, with a foc
 
 ---
 
-## 🛠️ Technical Skills
+# 🛠️ Technical Skills
 
-**IT Support & Systems**: 
+**IT Support & Systems**
 Windows 11 · Windows Server 2022 · Troubleshooting · Incident Management · Technical Documentation · PowerShell
 
-**Microsoft & Identity** : 
+**Microsoft & Identity**
 Active Directory · DNS · DHCP · Group Policy · Microsoft 365 · Entra ID · MFA
 
-**Networking** : 
+**Networking**
 TCP/IP · IPv4 · Subnetting · VLANs · 802.1Q Trunking · Inter-VLAN Routing · Cisco IOS
 
-**Tools** : 
-Ticketing System · osTicket · Cisco Packet Tracer · VirtualBox · Docker · WSL/Ubuntu · Git/GitHub · Poweshell
+**Tools & Platforms**
+osTicket · Cisco Packet Tracer · VirtualBox · Docker · WSL/Ubuntu · Git/GitHub
 
 ---
 
@@ -36,17 +36,18 @@ Ticketing System · osTicket · Cisco Packet Tracer · VirtualBox · Docker · W
 
 ## 01 — Windows IT Support & Active Directory Lab
 
-**Windows Server 2022 · Windows 11 · Active Directory · Group Policy · PowerShell**
+**Windows Server 2022 · Windows 11 · Active Directory · DNS · Group Policy · PowerShell**
 
-Built an enterprise-style Windows environment to develop practical IT administration and support skills.
+Built and administered a hands-on Windows domain environment to practice **IT support, Windows administration, identity management, and troubleshooting**.
 
-* Created and configured an Active Directory domain
-* Managed users, organizational units, and security groups
-* Joined a Windows 11 workstation to the domain
-* Configured password and account-lockout policies
-* Implemented shared-folder permissions and mapped network drives
-* Verified domain authentication and resource access
-* Practiced troubleshooting user, access, and system issues
+* Configured a Windows Server 2022 Active Directory domain
+* Created and managed users, Organizational Units, security groups, and computer accounts
+* Joined and administered a Windows 11 domain workstation
+* Configured DNS and verified domain connectivity
+* Implemented password and account-lockout policies using Group Policy
+* Configured NTFS permissions, network shares, and mapped drives
+* Troubleshot authentication, DNS, access-control, permissions, and Group Policy issues
+* Used Windows diagnostic tools to investigate, verify, and document incidents
 
 **[View Project →](https://github.com/rikit03/Windows-IT-Support-Active-Directory-Lab)**
 
@@ -56,15 +57,15 @@ Built an enterprise-style Windows environment to develop practical IT administra
 
 **osTicket · Docker · WSL/Ubuntu · MariaDB**
 
-Built a service desk environment to simulate **Level 1 IT support operations**.
+Built a hands-on service desk environment to simulate **Level 1 IT Support and incident management workflows**.
 
-* Deployed and configured osTicket
-* Configured departments, help topics, staff, and support workflows
+* Deployed and configured osTicket using Docker
+* Configured departments, help topics, staff, priorities, and support workflows
 * Created realistic IT support incidents
-* Practiced ticket prioritization, triage, and assignment
+* Practiced ticket creation, prioritization, triage, assignment, and escalation
 * Documented troubleshooting steps and resolutions
-* Practiced escalation and ticket closure
-* Focused on clear technical documentation and user communication
+* Practiced user communication and ticket closure
+* Applied a structured **Identify → Investigate → Resolve → Verify → Document** approach
 
 **[View Project →](https://github.com/rikit03/IT-Service-Desk-Incident-Management-Lab)**
 
@@ -74,12 +75,12 @@ Built a service desk environment to simulate **Level 1 IT support operations**.
 
 **Cisco Packet Tracer · Cisco IOS · VLANs · DHCP · RIPv2**
 
-Designed an independent multi-campus enterprise network simulation for a fictional university.
+Designed and implemented an **independent multi-campus enterprise network simulation** for a fictional university.
 
 * Designed a multi-building network topology
 * Implemented department-based VLAN segmentation
-* Planned IPv4 addressing
-* Configured VLANs and trunking
+* Planned IPv4 addressing and subnet allocation
+* Configured VLANs and 802.1Q trunking
 * Implemented inter-VLAN routing
 * Configured DHCP services
 * Implemented RIPv2 and static routing
@@ -111,14 +112,14 @@ Loyalist College — Belleville, Ontario
 
 * Customer service and communication
 * Technical troubleshooting
+* Incident triage and documentation
 * Structured problem-solving
-* Incident documentation
-* User support
+* End-user support
 * Attention to detail
-* Continuous technical learning
+* Technical learning and adaptability
 
 ---
 
 # 🎯 Career Goal
 
-Seeking an **entry-level IT Support, Service Desk, Help Desk, Desktop Support, or NOC opportunity** where I can apply my technical foundation, hands-on project experience, and customer-service skills while continuing to grow as an IT professional.
+Seeking an **entry-level IT Support, Service Desk, Help Desk, Desktop Support, or NOC opportunity** where I can apply my technical foundation, hands-on lab experience, troubleshooting skills, and customer-service background while continuing to grow as an IT professional.
