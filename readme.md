@@ -1,6 +1,6 @@
 # Rikit Thapa
 
-## IT Support & Network Technician | CCNA | AZ-900 | Fortinet FCA | Active Directory | Windows Server | Help Desk | Network Troubleshooting
+## IT Support & Network Technician | Help Desk | Network Troubleshooting
 
 📧 **Email:** [rikitthapa.03@gmail.com](mailto:rikitthapa.03@gmail.com)
 🔗 **LinkedIn:** https://www.linkedin.com/in/rikit-thapa-294ab028
