@@ -6,29 +6,29 @@
 🔗 **LinkedIn:** https://www.linkedin.com/in/rikit-thapa-294ab028
 💻 **GitHub:** https://github.com/rikit03
 
-IT Support-focused professional with a **Computer Systems Networking Technician diploma** and hands-on experience building, configuring, and troubleshooting **Windows, Active Directory, service desk, and Cisco networking environments**.
+IT Support-focused professional with a **Computer Systems Networking Technician diploma** and hands-on experience building, configuring, and troubleshooting **Windows, Active Directory, service desk, network, and infrastructure monitoring environments**.
 
-I combine technical problem-solving with customer-service experience, with a focus on **end-user support, incident troubleshooting, system administration, networking, and technical documentation**.
+I combine technical problem-solving with customer-service experience, with a focus on **end-user support, incident troubleshooting, system administration, networking, infrastructure monitoring, and technical documentation**.
 
 ### Target Roles
 
-**IT Support Technician · Service Desk Analyst · Help Desk Technician · Desktop Support Technician · NOC Technician · Junior Network Technician**
+**IT Support Technician · Service Desk Analyst · Help Desk Technician · Desktop Support Technician · NOC Technician · Network Support Technician**
 
 ---
 
 # 🛠️ Technical Skills
 
 **IT Support & Systems**
-Windows 11 · Windows Server 2022 · Troubleshooting · Incident Management · Technical Documentation · PowerShell
+Windows 11 · Windows Server 2022 · Troubleshooting · Incident Management · Technical Documentation · PowerShell · Linux
 
 **Microsoft & Identity**
 Active Directory · DNS · DHCP · Group Policy · Microsoft 365 · Entra ID · MFA
 
-**Networking**
-TCP/IP · IPv4 · Subnetting · VLANs · 802.1Q Trunking · Inter-VLAN Routing · Cisco IOS
+**Networking & Monitoring**
+TCP/IP · IPv4 · Subnetting · VLANs · 802.1Q Trunking · Inter-VLAN Routing · Cisco IOS · SNMP · ICMP · Zabbix
 
 **Tools & Platforms**
-osTicket · Cisco Packet Tracer · VirtualBox · Docker · WSL/Ubuntu · Git/GitHub
+osTicket · Zabbix · EVE-NG · Cisco Packet Tracer · FRRouting · VirtualBox · VMware Workstation · Docker · WSL/Ubuntu · Git/GitHub
 
 ---
 
@@ -92,6 +92,27 @@ Designed and implemented an **independent multi-campus enterprise network simula
 
 ---
 
+## 04 — NOC Infrastructure Monitoring & Incident Response Lab
+
+**Ubuntu Server · Zabbix · SNMPv2c · ICMP · EVE-NG · FRRouting**
+
+Built a hands-on **NOC and infrastructure monitoring environment** focused on monitoring, troubleshooting, alert investigation, and incident response.
+
+* Deployed Ubuntu Server 24.04 as the monitoring platform
+* Installed and configured Zabbix 7.4 for infrastructure monitoring and alerting
+* Configured Zabbix Agent, SNMPv2c, and ICMP monitoring
+* Built a routed network simulation using EVE-NG and FRRouting
+* Monitored Linux infrastructure and network-device availability
+* Simulated SNMP service and router availability failures
+* Investigated monitoring alerts and troubleshooting issues
+* Restored affected services and network devices
+* Verified recovery through monitoring and connectivity testing
+* Documented troubleshooting steps and incident outcomes
+
+**[View Project →](https://github.com/rikit03/NOC-Infrastructure-Monitoring-Incident-Response-Lab)**
+
+---
+
 # 🎓 Certifications
 
 * **Cisco Certified Network Associate (CCNA)**
@@ -113,8 +134,8 @@ Loyalist College — Belleville, Ontario
 * Customer service and communication
 * Technical troubleshooting
 * Incident triage and documentation
-* Structured problem-solving
 * End-user support
+* Structured problem-solving
 * Attention to detail
 * Technical learning and adaptability
 
